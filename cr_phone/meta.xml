@@ -1,0 +1,31 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="global.lua" type="client" />
+    
+    <script src="shop/client.lua" type="client" />
+    <script src="shop/server.lua" type="server" />
+    
+    <file src="files/bg.png" />
+    <file src="files/screen.png" />
+    <file src="files/menu/bg.png" />
+    <file src="files/menu/doc_bg.png" />
+    <file src="files/menu/icons/1.png" />
+    <file src="files/menu/icons/2.png" />
+    <file src="files/menu/icons/3.png" />
+    <file src="files/menu/icons/4.png" />
+    <file src="files/menu/icons/battery.png" />
+    <file src="files/menu/icons/wifi.png" />
+    <file src="files/menu/icons/signal.png" />
+    
+    <file src="files/fonts/SFUIDisplay-Bold.otf" />
+    <file src="files/fonts/SFUIDisplay-Heavy.otf" />
+    <file src="files/fonts/SFUIDisplay-Light.otf" />
+    <file src="files/fonts/SFUIDisplay-Medium.otf" />
+    <file src="files/fonts/SFUIDisplay-Regular.otf" />
+    <file src="files/fonts/SFUIDisplay-Semibold.otf" />
+    <file src="files/fonts/SFUIDisplay-Thin.otf" />
+    <file src="files/fonts/SFUIDisplay-Ultralight.otf" />
+    <file src="files/fonts/SFUIDisplay-Black.otf" />
+    
+</meta>

@@ -1,0 +1,16 @@
+<meta>
+    <script src="clothesC.lua" type="client" />
+    <script src="clothesS.lua" type="server" />
+    <script src="clothesG.lua" type="shared" />
+    
+    <script src="editor/editor.lua" type="client" />
+    
+    <file src="editor/files/Roboto.ttf" />
+    <file src="editor/files/move.png" />
+    <file src="editor/files/reset.png" />
+    <file src="editor/files/rotate.png" />
+    <file src="editor/files/save.png" />
+    <file src="editor/files/delete.png" />
+    
+    <oop>true</oop>
+</meta>

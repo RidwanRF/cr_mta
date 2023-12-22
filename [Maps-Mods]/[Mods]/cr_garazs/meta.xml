@@ -1,0 +1,7 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/int3int_carupg_int.dff" />
+    <file src="models/int3int_carupg_int.col" />
+    
+</meta>

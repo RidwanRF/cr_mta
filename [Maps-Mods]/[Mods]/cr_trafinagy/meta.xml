@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false"></script>
+    <file src="models/trafi.col"></file>
+    <file src="models/trafi.dff"></file>
+    <file src="models/trafi.txd"></file>
+</meta>

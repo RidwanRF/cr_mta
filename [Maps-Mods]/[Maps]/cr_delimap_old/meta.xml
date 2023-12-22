@@ -1,0 +1,4 @@
+<meta>
+    <file src="map.xml"></file>
+    <script src="map.lua" type="server"></script>
+</meta>

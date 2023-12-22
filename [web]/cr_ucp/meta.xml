@@ -1,0 +1,14 @@
+<ucp>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <export function="sendUCPMessage" type="server" http="true" />
+    <export function="changePassword" type="server" http="true" />
+    <export function="changeMail" type="server" http="true" />
+    <export function="changeSerial" type="server" http="true" />
+    <export function="deactivateUnbanRequest" type="server" />
+    <export function="banPlayer" type="server" http="true" />
+    <export function="unbanPlayer" type="server" http="true" />
+    <export function="getServerDetails" type="server" http="true" />
+    
+    <oop>true</oop>
+</ucp>

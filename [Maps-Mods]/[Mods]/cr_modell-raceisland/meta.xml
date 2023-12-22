@@ -1,0 +1,14 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/texture.txd" />
+    
+    <file src="models/1.dff" />
+    <file src="models/1.col" />
+    <file src="models/2.dff" />
+    <file src="models/2.col" />
+    <file src="models/3.dff" />
+    <file src="models/3.col" />
+    <file src="models/4.dff" />
+    <file src="models/4.col" />
+</meta>

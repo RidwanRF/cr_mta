@@ -1,0 +1,41 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="async.lua" type="shared" />
+    <script src="s_table.lua" type="server" />
+    <script src="c_table.lua" type="client" />
+    
+    <file src="files/tabla.col" />
+    <file src="files/tabla.txd" />
+    <file src="files/tabla.dff" />
+    
+    <file src="textures/1.png" />
+    <file src="textures/2.png" />
+    <file src="textures/3.png" />
+    <file src="textures/4.png" />
+    <file src="textures/5.png" />
+    <file src="textures/6.png" />
+    <file src="textures/7.png" />
+    <file src="textures/8.png" />
+    <file src="textures/9.png" />
+    <file src="textures/10.png" />
+    <file src="textures/11.png" />
+    <file src="textures/12.png" />
+    <file src="textures/13.png" />
+    <file src="textures/14.png" />
+    <file src="textures/15.png" />
+    <file src="textures/16.png" />
+    <file src="textures/17.png" />
+    <file src="textures/18.png" />
+    <file src="textures/19.png" />
+    <file src="textures/20.png" />
+    <file src="textures/21.png" />
+    <file src="textures/22.png" />
+    <file src="textures/23.png" />
+    <file src="textures/24.png" />
+    <file src="textures/25.png" />
+    <file src="textures/26.png" />
+    <file src="textures/27.png" />
+    <file src="textures/28.png" />
+    <file src="fx.fx" />
+</meta>

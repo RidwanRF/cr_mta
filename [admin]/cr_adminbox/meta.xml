@@ -1,0 +1,10 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="icons/info.png" />
+    <file src="icons/warning.png" />
+    <file src="icons/error.png" />
+    <file src="files/beep.mp3" />
+    <export function="addBox" type="client"/>
+</meta>

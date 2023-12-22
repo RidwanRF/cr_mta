@@ -1,0 +1,30 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="global.lua" type="shared" />
+    <script src="jail_c.lua" type="client" />
+    <script src="jail_s.lua" type="server" />
+    
+    <file src="files/enter.mp3" />
+    <file src="files/pm.mp3" />
+    <file src="files/sadmusic.mp3" />
+    <file src="files/bebortonozve.mp3" />
+    <file src="files/jailtext.mp3" />
+    <file src="files/blackwhite.fx" />
+    
+    <export function="getAdminTitle" type="shared" />
+    <export function="getAdminColor" type="shared" />
+    <export function="getAdminTitleByLevel" type="shared" />
+    <export function="getAdminColorByLevel" type="shared" />
+    <export function="getAdminName" type="shared" />
+    <export function="getAdminDuty" type="shared" />
+    <export function="getAdminSyntax" type="shared" />
+    <export function="getMaxKickCount" type="shared" />
+    <export function="getMaxBanCount" type="shared" />
+    <export function="getMaxJailCount" type="shared" />
+    <export function="getMaxRTCCount" type="shared" />
+    <export function="getMaxFixCount" type="shared" />
+    <export function="getMaxFuelCount" type="shared" />
+</meta>

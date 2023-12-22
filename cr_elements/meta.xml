@@ -1,0 +1,8 @@
+<meta>
+    <script src="elementS.lua" type="server" />
+    
+    <export function="createVehicle" type="server" />
+    <export function="destroyVehicles" type="server" />
+    
+    <export function="createMarker" type="server" />
+</meta>

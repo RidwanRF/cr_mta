@@ -1,0 +1,22 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.lua" type="client" />
+    <script src="oocC.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <export function="getLines" type="client" />
+    <export function="showChat" type="client" />
+    <export function="isChatVisible" type="client" />
+    <export function="onOOCMessageSend" type="client" />
+    <export function="showOptionsIC" type="client" />
+    <export function="showOptionsOOC" type="client" />
+    
+    <file src="fonts/gotham_light.ttf" />
+    <file src="fonts/Rubik-Bold.ttf" />
+    <file src="fonts/Rubik-Regular.ttf" />
+    <file src="fonts/OpenSans-Bold.ttf" />
+    <file src="fonts/PT_Sans-Narrow-Web-Bold.ttf" />
+    <file src="fonts/Slabo27px-Regular.ttf" />
+    <file src="fonts/Ubuntu-Medium.ttf" />
+    <file src="fonts/SourceSansPro-Bold.ttf" />
+    <file src="fonts/HelveticaNeue.ttf" />
+</meta>

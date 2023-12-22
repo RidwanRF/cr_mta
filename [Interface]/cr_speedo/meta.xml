@@ -1,0 +1,40 @@
+<speedo>
+    <script src="shared.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    
+    <file src="html/speedo.html" />
+    <file src="html/jquery.min.js" />
+    <file src="html/jquery-circle-progress-1.2.2/dist/circle-progress.js" />
+    <file src="html/speedo.js" />
+    <file src="html/speedo.css" />
+    
+    <file src="files/Rubik_black.ttf" />
+    <file src="files/Rubik_bold.ttf" />
+    
+    <file src="files/speedobg.png" />
+    <file src="files/speedobg2.png" />
+    <file src="files/Index_L/Index_L.png" />
+    <file src="files/Index_L/Index_L_A.png" />
+    <file src="files/Index_R/Index_R.png" />
+    <file src="files/Index_R/Index_R_A.png" />
+    <file src="files/Engine/Engine.png" />
+    <file src="files/Engine/Engine_A.png" />
+    <file src="files/Handbrake/handbOFF.png" />
+    <file src="files/Handbrake/handbON.png" />
+    <file src="files/Check_engine/checkengineOFF.png" />
+    <file src="files/Check_engine/checkengineON.png" />
+    <file src="files/Oil/Oil.png" />
+    <file src="files/Oil/Oil_A.png" />
+    <file src="files/Light/Light.png" />
+    <file src="files/Light/Light_A.png" />
+    <file src="files/Fuel/Fuel.png" />
+    <file src="files/Fuel/Fuel_A.png" />
+    <file src="files/lines.png" />
+    <file src="files/numbers.png" />
+    
+    <file src="files/index.mp3" />
+    <file src="files/font2.ttf" />
+    
+    <oop>true</oop>
+</speedo>

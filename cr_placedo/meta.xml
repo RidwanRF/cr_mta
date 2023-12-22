@@ -1,0 +1,9 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="placedoC.lua" type="client" />
+    <script src="placedoS.lua" type="server" />
+    <file src="files/bin.png"/>
+    <file src="files/scale.png"/>
+    
+    <oop>true</oop>
+</meta>

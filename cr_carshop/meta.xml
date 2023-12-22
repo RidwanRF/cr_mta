@@ -1,0 +1,19 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <script src="datas.lua" type="client" />
+    <script src="global.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    
+    <file src="files/h.png" />
+    <file src="files/circle.png" />
+    <file src="files/circle2.png" />
+    <file src="files/logo.png" />
+    <file src="files/left.png" />
+    <file src="files/right.png" />
+    
+    <export function="addNewVehicleToCount" type="server" />
+    <export function="minusCount" type="server" />
+    <export function="getVehiclePrice" type="shared" />
+    
+    <oop>true</oop>
+</meta>

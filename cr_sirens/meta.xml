@@ -1,0 +1,24 @@
+<meta>
+    <script src="flasherC.luac" type="client" />
+    <script src="flasherS.lua" type="server" />
+    
+    <script src="loadflash.luac" type="client" />
+    
+    <file src="files/flasher.txd" />
+    <file src="files/flasher.dff" />
+    
+    <file src="files/Roboto.ttf" />
+    
+    <file src="files/light.png" />
+    <file src="files/sound_on.png" />
+    <file src="files/sound_off.png" />
+    
+    <file src="files/siren1.wav" />
+    <file src="files/siren2.wav" />
+    <file src="files/siren3.wav" />
+    <file src="files/horn.wav" />
+    
+    <export function="createSiren" type="client" />
+    
+    <oop>true</oop>
+</meta>

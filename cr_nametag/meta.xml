@@ -1,0 +1,18 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.luac" type="client" />
+    <script src="afkC.luac" type="client" />
+    
+    <file src="files/afk.png" />
+    <file src="files/write.png" />
+    <file src="files/console.png" />
+    <file src="files/skull.png" />
+    <file src="files/respawn.png" />
+    <file src="files/taser.png" />
+    
+    <file src="logos/logo.png" />
+    <file src="logos/royalf.png" />
+    <file src="logos/jesus.png" />
+    <file src="logos/awang.png" />
+    <file src="logos/thmms.png" />
+</meta>

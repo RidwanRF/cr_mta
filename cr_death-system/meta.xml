@@ -1,0 +1,15 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="sourceC.lua" type="client" />
+    <script src="sourceS.lua" type="server" />
+    <script src="bone/sourceC.lua" type="client" />
+    <script src="bone/sourceS.lua" type="server" />
+    <script src="ToonShader.lua" type="client" />
+    <script src="PencilShader.lua" type="client" />
+    <file src="shaders/ToonShader.fx" />
+    <file src="shaders/PencilShader.fx" />
+    <file src="sounds/heart.mp3" />
+    <file src="sounds/backgroundSound.mp3" />
+    <export function="getWeaponNameTranslated" type="client" />
+</meta>

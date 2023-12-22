@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="bubbles/client.lua" type="client" />
+    <export function="createMessage" type="shared" />
+    <file src="files/ws.wav" />
+    <file src="files/left.png" />
+    <file src="files/right.png" />
+</meta>

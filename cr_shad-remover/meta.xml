@@ -1,0 +1,7 @@
+<meta>
+    <oop>true</oop>
+    
+    <script src="client.luac" type="client" />
+    <file src="files/transparent.png" />
+    <file src="files/texchanger.fx" />
+</meta>

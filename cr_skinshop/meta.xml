@@ -1,0 +1,5 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="files/roboto.black.ttf" />
+    <file src="files/pep.mp3" />
+</meta>

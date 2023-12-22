@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client"></script>
+    <file src="mods/benyakutbng.dff"></file>
+    <file src="mods/benyakutbng.txd"></file>
+    <file src="mods/benyakutbng.col"></file>
+</meta>

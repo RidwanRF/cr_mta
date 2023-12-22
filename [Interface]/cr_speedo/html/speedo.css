@@ -1,0 +1,198 @@
+@font-face {
+    font-family: rubik_black;
+    src: url("http://mta/local/files/Rubik_black.ttf");
+}
+
+@font-face {
+    font-family: rubik_bold;
+    src: url("http://mta/local/files/Rubik_bold.ttf");
+}
+
+body {
+	font-family: rubik_black;
+	overflow: hidden;
+	margin: 0;
+}
+
+#speedoBg {
+	position: absolute;
+	background-image: url("http://mta/local/files/speedobg.png");
+	width: 301px;
+	height: 231px;
+	background-repeat: no-repeat;
+    /* background-position: center;  */
+}
+
+#speed {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: rubik_bold;
+	color: white;
+	font-size: 40px;
+}
+
+.index_l {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	transform: translateX(-50%);
+	width: 14px;
+	height: 10px;
+	background: url("http://mta/local/files/Index_L/Index_L.png");
+}
+
+.active_index_l {
+	background: url("http://mta/local/files/Index_L/Index_L_A.png");
+}
+
+.index_r {
+	position: absolute;
+	top: 70%;
+	left: 60%;
+	transform: translateX(-50%);
+	width: 14px;
+	height: 10px;
+	background-image: url("http://mta/local/files/Index_R/Index_R.png");
+}
+
+.active_index_r {
+	background-image: url("http://mta/local/files/Index_R/Index_R_A.png");
+}
+
+.handbrake {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	width: 17px;
+	height: 17px;
+	background-image: url("http://mta/local/files/Handbrake/handbOFF.png");
+}
+
+.active_handbrake {
+	background-image: url("http://mta/local/files/Handbrake/handbON.png");
+}
+
+.engine {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	width: 11px;
+	height: 13px;
+	background-image: url("http://mta/local/files/Engine/Engine.png");
+}
+
+.active_engine {
+	background-image: url("http://mta/local/files/Engine/Engine_A.png");
+}
+
+.check_engine {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	transform: translate(-50%, -25%);
+	width: 17px;
+	height: 17px;
+	background-image: url("http://mta/local/files/Check_engine/checkengineOFF.png");
+}
+
+.active_check_engine {
+	background-image: url("http://mta/local/files/Check_engine/checkengineON.png");
+}
+
+.check_oil {
+	position: absolute;
+	top: 80%;
+	left: 60%;
+	transform: translate(-50%, -25%);
+	width: 13px;
+	height: 13px;
+	background-image: url("http://mta/local/files/Oil/Oil.png");
+}
+
+.active_check_oil {
+	background-image: url("http://mta/local/files/Oil/Oil_A.png");
+}
+
+.light {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 18px;
+	height: 13px;
+	background-image: url("http://mta/local/files/Light/Light.png");
+}
+
+.active_light {
+	background-image: url("http://mta/local/files/Light/Light_A.png");
+}
+
+
+.odometer {
+	position: absolute;
+	left: 50%;
+	top: 97%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 10px;
+}
+
+.gear {
+	position: absolute;
+	top: 25.5%;
+	left: 50.125%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 25px;
+}
+
+.circle {
+	position: absolute;
+	top: 0%;
+	left: 11.5%;
+}
+
+.fuel {
+	position: absolute;
+	top: 82%;
+	left: 86%;
+	transform: translate(-50%, -50%);
+}
+
+.fuel div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 21px;
+	height: 24px;
+}
+
+.petrol {
+	background-image: url("http://mta/local/files/Fuel/Fuel.png");
+}
+
+.lines {
+	position: absolute;
+	top: 42.5%;
+	left: 50.9%;
+	transform: translate(-50%, -50%);
+	width: 245px;
+	height: 209px;
+	background-image: url("http://mta/local/files/lines.png");
+	z-index: 2;
+}
+
+.numbers {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 301px;
+	height: 231px;
+	background-image: url("http://mta/local/files/numbers.png");
+}

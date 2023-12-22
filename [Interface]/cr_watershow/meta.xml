@@ -1,0 +1,4 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="files/water.png" />
+</meta>

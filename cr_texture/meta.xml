@@ -1,0 +1,23 @@
+<meta>
+    <script src="client.lua" type="client" />
+    
+    <file src="files/vgsn_billboard.txd" />
+    <file src="files/cj_porno_vids.png" />
+    <file src="files/cj_sprunk_f.png" />
+    <file src="files/cj_sprunk_front2.png" />
+    <file src="files/cj_sprunk_front.png" />
+    <file src="files/cj_sprunk_dirty.png" />
+    <file src="files/chillidog_sign.png" />
+    <file src="files/sunbillb03.png" />
+    <file src="files/sprunk_postersign1.png" />
+    <file src="files/iceysign.png" />
+    <file src="files/iceyside.png" />
+    <file src="files/redwhite_stripe.png" />
+    <file src="files/fam3-1.png" />
+    <file src="files/fam3-2.png" />
+    <file src="files/cj_painting1.png" />
+    <file src="files/gb_magazine01.png" />
+    <file src="files/bigsprunkcan.png" />
+    <file src="files/sprunk_temp.png" />
+    <file src="files/replace.fx" />
+</meta>

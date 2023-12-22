@@ -1,0 +1,13 @@
+<meta>
+    <script src="fishC.luac" type="client" />
+    <script src="fishS.lua" type="server" />
+    
+    <file src="files/fishingrod.dff" />
+    <file src="files/fishingrod.txd" />
+    
+    <file src="files/reel.mp3" />
+    
+    <export function="createFishingRod" type="client" />
+    
+    <oop>true</oop>
+</meta>

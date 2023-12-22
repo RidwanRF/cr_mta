@@ -1,0 +1,27 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/texture.txd" />
+    <file src="models/tesla.txd" />
+    <file src="models/pumpfix.txd" />
+    
+    <file src="models/deli.dff" />
+    <file src="models/deli.col" />
+    <file src="models/eszaki.dff" />
+    
+    <file src="models/pumpfix.dff" />
+    <file src="models/pumpfix.col" />
+    
+    <file src="models/tesla.dff" />
+    <file src="models/tesla.col" />
+    
+    <file src="models/tesla_place.dff" />
+    <file src="models/tesla_place.col" />
+    
+    <file src="models/pump.dff" />
+    <file src="models/pump.col" />
+    <file src="models/pumpbenzin.txd" />
+    <file src="models/pumpdiesel.txd" />
+    
+    <file src="models/roadFix.col" />
+</meta>

@@ -1,0 +1,119 @@
+<faction>
+    <oop>true</oop>
+    <include resource="ajax" />
+    <script src="triggerHack.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="datas.lua" type="client" />
+    <script src="global.lua" type="shared" />
+    
+    <export function="isPlayerInFaction" type="shared" />
+    <export function="isPlayerLeader" type="shared" />
+    <export function="isPlayerMainLeader" type="shared" />
+    <export function="getPlayerFactionRank" type="shared" />
+    <export function="getFactionDutys" type="shared" />
+    <export function="getFactionStorage" type="shared" />
+    <export function="updateFactionStorage" type="shared" />
+    <export function="getFactionName" type="shared" />
+    <export function="getPlayerFactions" type="shared" />
+    <export function="getPlayerDatas" type="shared" />
+    <export function="getFactionMoney" type="shared" />
+    <export function="depositItemToFaction" type="server" />
+    <export function="getRankName" type="shared" />
+    <export function="closeFactionPanel" type="client" />
+    
+    <file src="files/Roboto.ttf" />
+    <file src="files/staymta.png" />
+    <file src="files/logo.png" />
+    <file src="files/FontAwesome.ttf" />
+    <file src="files/assets/Roboto.ttf" />
+    
+    <!-- <file src="html/script.js" /> -->
+    <file src="html/faction.js" />
+    <file src="html/style.css" />
+    <file src="html/faction.html" />
+    <file src="html/jquery.min.js" />
+    
+    <file src="files/assets/bg.png" />
+    <file src="files/assets/bg2.png" />
+    <file src="files/assets/logo.png" />
+    
+    <file src="files/assets/menu/bg.png" />
+    <file src="files/assets/menu/line.png" />
+    <file src="files/assets/menu/line_c.png" />
+    
+    <file src="files/assets/members/bg.png" />
+    <file src="files/assets/members/line.png" />
+    <file src="files/assets/members/line_c.png" />
+    
+    <file src="files/assets/members/details/bg.png" />
+    <file src="files/assets/members/details/line.png" />
+    
+    <file src="files/assets/members/action/line.png" />
+    <file src="files/assets/members/action/line_c.png" />
+    <file src="files/assets/members/action/bg.png" />
+    
+    <file src="files/assets/members/action/buttons/1_c.png" />
+    <file src="files/assets/members/action/buttons/2.png" />
+    <file src="files/assets/members/action/buttons/2_c.png" />
+    <file src="files/assets/members/action/buttons/3.png" />
+    <file src="files/assets/members/action/buttons/3_c.png" />
+    <file src="files/assets/members/action/buttons/4.png" />
+    <file src="files/assets/members/action/buttons/4_c.png" />
+    <file src="files/assets/members/action/buttons/5.png" />
+    <file src="files/assets/members/action/buttons/5_c.png" />
+    <file src="files/assets/members/action/buttons/1.png" />
+    
+    <file src="files/assets/vehicle/bg.png" />
+    <file src="files/assets/vehicle/line.png" />
+    <file src="files/assets/vehicle/details/bg.png" />
+    <file src="files/assets/vehicle/details/line.png" />
+    <file src="files/assets/vehicle/button/bg.png" />
+    <file src="files/assets/vehicle/button/line.png" />
+    <file src="files/assets/vehicle/button/line_c.png" />
+    
+    <file src="files/assets/ranks/bg.png" />
+    <file src="files/assets/ranks/line.png" />
+    <file src="files/assets/ranks/line_c.png" />
+    
+    <file src="files/assets/ranks/details/line.png" />
+    <file src="files/assets/ranks/details/bg.png" />
+    
+    <file src="files/assets/ranks/button/bg.png" />
+    <file src="files/assets/ranks/button/line.png" />
+    <file src="files/assets/ranks/button/line_c.png" />
+    
+    <file src="files/assets/ranks/button/edit/bg.png" />
+    <file src="files/assets/ranks/button/edit/line.png" />
+    
+    
+    <file src="files/assets/main/button_c.png" />
+    <file src="files/assets/main/details.png" />
+    <file src="files/assets/main/money.png" />
+    <file src="files/assets/main/msg.png" />
+    <file src="files/assets/main/button.png" />
+    
+    <file src="files/assets/list/line.png" />
+    <file src="files/assets/list/line_c.png" />
+    <file src="files/assets/list/bg.png" />
+    
+    <file src="files/assets/list/1.png" />
+    <file src="files/assets/list/2.png" />
+    <file src="files/assets/list/3.png" />
+    <file src="files/assets/list/4.png" />
+    <file src="files/assets/list/5.png" />
+    <file src="files/assets/list/6.png" />
+    
+    <file src="files/assets/storage/bg.png" />
+    <file src="files/assets/storage/line.png" />
+    <file src="files/assets/storage/details/bg.png" />
+    <file src="files/assets/storage/details/line.png" />
+    
+    <file src="files/assets/duty/bg.png" />
+    <file src="files/assets/duty/line.png" />
+    <file src="files/assets/duty/details/bg.png" />
+    <file src="files/assets/duty/details/line.png" />
+    <file src="files/assets/duty/action/line.png" />
+    <file src="files/assets/duty/action/line_c.png" />
+    <file src="files/assets/duty/action/bg.png" />
+</faction>

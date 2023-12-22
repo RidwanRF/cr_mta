@@ -1,0 +1,33 @@
+<cartrans>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="globalS.lua" type="server" />
+    <script src="globalC.lua" type="client" />
+    
+    <script src="keyHandlers.lua" type="client" />
+    <script src="shared.lua" type="shared" />
+    
+    <script src="start/startS.lua" type="server" />
+    <script src="start/startC.lua" type="client" />
+    
+    <script src="cartrans/cartransS.lua" type="server" />
+    <script src="cartrans/cartransC.lua" type="client" />
+    
+    <script src="async.lua" type="server" />
+    
+    <file src="model/feldolgozott.txd" />
+    <file src="model/feldolgozott.col" />
+    <file src="model/feldolgozott.dff" />
+    
+    <file src="sound/gep.mp3" />
+    
+    <file src="images/logo.png" />
+    <file src="images/truck.png" />
+    
+    <map src="map/stay_fleado.map" dimension="0"></map>
+    <script src="map/mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="map/mapEditorScriptingExtension_c.lua" type="client" validate="false" cache="false"></script>
+    
+    <oop>true</oop>
+    <file src="map.xml"></file>
+    <script src="map.lua" type="client"></script>
+</cartrans>

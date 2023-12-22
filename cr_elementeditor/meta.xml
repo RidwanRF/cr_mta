@@ -1,0 +1,16 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="editor.luac" type="client" />
+    <file src="files/delete.png" />
+    <file src="files/move.png" />
+    <file src="files/reset.png" />
+    <file src="files/rotate.png" />
+    <file src="files/save.png" />
+    <file src="files/Roboto.ttf" />
+    <export function="toggleEditor" type="client" />
+    <export function="quitEditor" type="client" />
+    <export function="resetEditorElementChanges" type="client" />
+    
+    
+</meta>

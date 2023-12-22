@@ -1,0 +1,13 @@
+<meta>
+    
+    <script src="chaticon.lua" type="client" />
+    <file src="img/1.png" />
+    <file src="img/2.png" />
+    <file src="img/3.png" />
+    <file src="img/4.png" />
+    <file src="img/5.png" />
+    <file src="img/moon.png" />
+    
+    
+    <file src="chaticon.fx" />
+</meta>

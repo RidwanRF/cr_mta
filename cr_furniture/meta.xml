@@ -1,0 +1,16 @@
+<meta>
+    <script src="furnC.lua" type="client" />
+    <script src="furnS.lua" type="server" />
+    <script src="furnG.lua" type="shared" />
+    
+    <script src="editor/editor.lua" type="client" />
+    
+    <file src="editor/files/Roboto.ttf" />
+    <file src="editor/files/move.png" />
+    <file src="editor/files/reset.png" />
+    <file src="editor/files/rotate.png" />
+    <file src="editor/files/save.png" />
+    <file src="editor/files/delete.png" />
+    
+    <oop>true</oop>
+</meta>

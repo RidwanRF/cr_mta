@@ -1,0 +1,97 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.lua" type="client" />
+    <script src="global.lua" type="client" />
+    <file src="shaders/old_film.fx" />
+    <file src="sounds/loop.mp3" />
+    <file src="images/resize.png" />
+    <file src="images/bin.png" />
+    <file src="images/reset.png" />
+    <file src="images/settings.png" />
+    <file src="images/add.png" />
+    <export function="getDetails" type="client" />
+    <export function="setNode" type="client" />
+    <export function="getStamina" type="client" />
+    
+    <!-- HUD -->
+    <script src="hud/client.lua" type="client" />
+    <file src="hud/files/food.png" />
+    <file src="hud/files/hp.png" />
+    <file src="hud/files/armor.png" />
+    <file src="hud/files/stamina.png" />
+    <file src="hud/files/drink.png" />
+    <file src="hud/files/bone.png" />
+    <file src="hud/files/injureLeftArm.png" />
+    <file src="hud/files/injureLeftFoot.png" />
+    <file src="hud/files/injureRightArm.png" />
+    <file src="hud/files/injureRightFoot.png" />
+    <file src="hud/files/font2.ttf" />
+    
+    <!-- Stamina -->
+    <script src="stamina/client.lua" type="client" />
+    <script src="stamina/server.lua" type="server" />
+    <file src="stamina/files/stamina.png" />
+    
+    <!-- Speedo -->
+    <!-- <script src="speedo/client.lua" type="client" /> -->
+    <file src="speedo/files/index.mp3" />
+    <file src="speedo/files/alap.png" />
+    <file src="speedo/files/f.png" />
+    <file src="speedo/files/lampa.png" />
+    <file src="speedo/files/kezifek.png" />
+    <file src="speedo/files/ov.png" />
+    <file src="speedo/files/motor.png" />
+    <file src="speedo/files/benzin.png" />
+    <file src="speedo/files/ajto.png" />
+    <file src="speedo/files/index_b.png" />
+    <file src="speedo/files/index_j.png" />
+    <file src="speedo/files/fontawesome.otf" />
+    
+    <!-- Weapon -->
+    <file src="weapon/files/weapon0.png" />
+    <file src="weapon/files/weapon1.png" />
+    <file src="weapon/files/weapon2.png" />
+    <file src="weapon/files/weapon3.png" />
+    <file src="weapon/files/weapon4.png" />
+    <file src="weapon/files/weapon5.png" />
+    <file src="weapon/files/weapon6.png" />
+    <file src="weapon/files/weapon7.png" />
+    <file src="weapon/files/weapon8.png" />
+    <file src="weapon/files/weapon9.png" />
+    <file src="weapon/files/weapon10.png" />
+    <file src="weapon/files/weapon11.png" />
+    <file src="weapon/files/weapon12.png" />
+    <file src="weapon/files/weapon13.png" />
+    <file src="weapon/files/weapon14.png" />
+    <file src="weapon/files/weapon15.png" />
+    <file src="weapon/files/weapon16.png" />
+    <file src="weapon/files/weapon17.png" />
+    <file src="weapon/files/weapon18.png" />
+    <file src="weapon/files/weapon22.png" />
+    <file src="weapon/files/weapon23.png" />
+    <file src="weapon/files/weapon24.png" />
+    <file src="weapon/files/weapon25.png" />
+    <file src="weapon/files/weapon26.png" />
+    <file src="weapon/files/weapon27.png" />
+    <file src="weapon/files/weapon28.png" />
+    <file src="weapon/files/weapon29.png" />
+    <file src="weapon/files/weapon30.png" />
+    <file src="weapon/files/weapon31.png" />
+    <file src="weapon/files/weapon32.png" />
+    <file src="weapon/files/weapon33.png" />
+    <file src="weapon/files/weapon34.png" />
+    <file src="weapon/files/weapon35.png" />
+    <file src="weapon/files/weapon36.png" />
+    <file src="weapon/files/weapon37.png" />
+    <file src="weapon/files/weapon38.png" />
+    <file src="weapon/files/weapon39.png" />
+    <file src="weapon/files/weapon40.png" />
+    <file src="weapon/files/weapon41.png" />
+    <file src="weapon/files/weapon42.png" />
+    <file src="weapon/files/weapon43.png" />
+    <file src="weapon/files/weapon44.png" />
+    <file src="weapon/files/weapon45.png" />
+    <file src="weapon/files/weapon46.png" />
+    
+    <file src="files/moneychange.mp3" />
+</meta>

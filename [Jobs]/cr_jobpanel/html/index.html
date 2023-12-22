@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			body {
+				overflow: hidden;
+				background: rgba(0, 0, 0, 0);
+			}
+
+			.custom-container {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.white-black {
+				color: white;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container custom-container text-center" style="width: 350px;">
+			<h2 class="white-black"><font color="orange">Stay</font>MTA Munkalista</h2>
+			<p class="white-black">Válassz egy munkát az alábbi listából</p>
+
+			<div class="panel-group" id="accordion">
+		    	<div class="panel">
+		    		<div data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-heading" style="cursor: pointer">
+		        		<h4 class="panel-title"><a style="text-decoration: none">Bányász</a></h4>
+		      		</div>
+
+		      		<div id="collapse1" class="panel-collapse collapse">
+		        		<div class="panel-body">
+			        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			        		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			        		<br><br>
+
+			        		<button data-target="1" type="button" class="btn btn-success" style="width: 100%">Felvétel</button>
+		        		</div>
+		        	</div>
+		      	</div>
+
+			    <div class="panel">
+			    	<div data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-heading" style="cursor: pointer">
+			        	<h4 class="panel-title"><a style="text-decoration: none">Favágó</a></h4>
+			      	</div>
+			    
+			    	<div id="collapse2" class="panel-collapse collapse">
+			        	<div class="panel-body">
+			        		A favágó munka elvégzéséhez szükséged van egy baltára amit a Plazában lévő hobbiboltban tudsz megvásárolni.
+							A fatelepre érve megkezdheted a munkát.
+							A balta használatával döntsd ki a fákat majd aprítsd fel és pakold fel az autó platójára.
+							A fafeldolgozónál add le a felaprított nyersanyagot, majd megkapod a fizetésed.
+
+			        		<br><br>
+
+			        		<button data-target="2" type="button" class="btn btn-success" style="width: 100%">Felvétel</button>
+			        	</div>
+			      	</div>
+			    </div> 
+				
+				<div class="panel">
+			    	<div data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-heading" style="cursor: pointer">
+			        	<h4 class="panel-title"><a style="text-decoration: none">Roncs szállító</a></h4>
+			      	</div>
+			    
+			    	<div id="collapse3" class="panel-collapse collapse">
+			        	<div class="panel-body">
+			        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			        		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			        		<br><br>
+
+			        		<button data-target="3" type="button" class="btn btn-success" style="width: 100%">Felvétel</button>
+			        	</div>
+			      	</div>
+			    </div>
+			</div>
+
+			<button id="quitjob" type="button" class="btn btn-warning" style="width: 100%">Felmondás</button>
+			<button id="closepanel" type="button" class="btn btn-danger" style="width: 100%; margin-top: 15px">Bezárás</button>
+			<br>
+			<br>
+		</div>
+
+		<script type="text/javascript">
+			$(".btn-success").click(function() {
+				mta.triggerEvent("js->SelectJob", $(this).attr("data-target"));
+			});
+
+			$("#quitjob").click(function() {
+				mta.triggerEvent("js->QuitJob");
+			});
+
+			$("#closepanel").click(function() {
+				mta.triggerEvent("js->ClosePanel");
+			});
+		</script>
+	</body>
+</html>

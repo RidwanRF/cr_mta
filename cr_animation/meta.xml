@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    
+    <file src="files/logo.png" />
+    <file src="files/staymta.png" />
+    <export function="applyAnimation" type="shared" />
+    <export function="removeAnimation" type="shared" />
+</meta>

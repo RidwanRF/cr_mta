@@ -1,0 +1,12 @@
+<meta>
+    <script src="loadC.luac" type="client" />
+    
+    <script src="global.luac" type="client" />
+    
+    <script src="openC.luac" type="client" />
+    
+    <script src="buyC.luac" type="client" />
+    <script src="buyS.lua" type="server" />
+    
+    <!-- <script src="triggerHack.lua" type="shared" /> -->
+</meta>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="http://mta/local/html/scripts/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="panelBody">
+			<div class="panelTitle">Csekk befizetés</div>
+			<div id="content" class="panelContent">
+				<!-- <div id="0" name="panelElement" class="panelElement">asd</div> -->
+			</div>
+			<button id="payButton" onClick="paySelected();" class="payButton">Befizetés</button>
+			<button onClick="payAll();" class="payAllButton">Az összes befizetése</button>
+			<p class="footer"><font size="0.5">A bezáráshoz használd a 'BACKSPACE' gombot.</font></p>
+		</div>
+		<div id="tooltip">
+			<div id="tooltipText">-</div>
+			<div id="tooltipCost">$0</div>
+		</div>
+	</body>
+</html>

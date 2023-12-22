@@ -1,0 +1,90 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="dashboardC.lua" type="client" />
+    <script src="dashboardS.lua" type="server" />
+    
+    <file src="files/images/logo.png" />
+    
+    <file src="files/html/progress.html" />
+    <file src="files/html/Rubik.ttf" />
+    
+    <file src="files/skins/0.jpg" />
+    
+    <file src="files/shaders/shader.fx" />
+    
+    <export function="closeDashboard" type="client"/>
+    
+    <script src="files/shaders/carreflect/c_main.lua" type="client" />
+    <script src="files/shaders/carreflect/c_switch.lua" type="client" />
+    <file src="files/shaders/carreflect/fx/car_paint.fx" />
+    <file src="files/shaders/carreflect/fx/car_glass.fx" />
+    <file src="files/shaders/carreflect/fx/car_shatt.fx" />
+    <file src="files/shaders/carreflect/fx/mta-helper.fx" />
+    <file src="files/shaders/carreflect/images/smallnoise3d.dds" />
+    
+    <script src="files/shaders/hdwater/c_water_ref.lua" type="client" />
+    <script src="files/shaders/hdwater/c_switch.lua" type="client" />
+    <file src="files/shaders/hdwater/fx/water_ref.fx" />
+    <file src="files/shaders/hdwater/fx/mta-helper.fx" />
+    <file src="files/shaders/hdwater/images/wavemap.png" />
+    <file src="files/shaders/hdwater/images/cube_env.dds" />
+    
+    <script src="files/shaders/hdtexture/c_hd.lua" type="client" />
+    <script src="files/shaders/hdtexture/c_switch.lua" type="client" />
+    <file src="files/shaders/hdtexture/detail.fx" />
+    <file src="files/shaders/hdtexture/detail04.png" />
+    <file src="files/shaders/hdtexture/detail22.png" />
+    <file src="files/shaders/hdtexture/detail29.png" />
+    <file src="files/shaders/hdtexture/detail35T.png" />
+    <file src="files/shaders/hdtexture/detail55.png" />
+    <file src="files/shaders/hdtexture/detail58.png" />
+    <file src="files/shaders/hdtexture/detail63.png" />
+    <file src="files/shaders/hdtexture/detail68.png" />
+    <file src="files/shaders/hdtexture/dirty.png" />
+    <file src="files/shaders/hdtexture/mta-helper.fx" />
+    
+    <script src="files/shaders/blackwhite/c_blackwhite.lua" type="client" />
+    <script src="files/shaders/blackwhite/c_switch.lua" type="client" />
+    <file src="files/shaders/blackwhite/fx/blackwhite.fx" />
+    
+    <script src="files/shaders/dof/c_main.lua" type="client" />
+    <script src="files/shaders/dof/c_rtpool.lua" type="client" />
+    <script src="files/shaders/dof/c_switch.lua" type="client" />
+    <file src="files/shaders/dof/fx/dBlurH.fx" />
+    <file src="files/shaders/dof/fx/dBlurV.fx" />
+    <file src="files/shaders/dof/fx/dDepthTex.fx" />
+    
+    <script src="files/shaders/hdr/c_switch.lua" type="client" />
+    <script src="files/shaders/hdr/c_contrast.lua" type="client" />
+    <script src="files/shaders/hdr/c_rtpool.lua" type="client" />
+    <file src="files/shaders/hdr/fx/bloom_combine.fx" />
+    <file src="files/shaders/hdr/fx/bloom_extract.fx" />
+    <file src="files/shaders/hdr/fx/blurH.fx" />
+    <file src="files/shaders/hdr/fx/blurV.fx" />
+    <file src="files/shaders/hdr/fx/contrast.fx" />
+    <file src="files/shaders/hdr/fx/modulation.fx" />
+    <file src="files/shaders/hdr/fx/mta-helper.fx" />
+    <file src="files/shaders/hdr/images/vignette1.dds" type="client" />
+    
+    <script src="files/shaders/palette/c_palette.lua" type="client" />
+    <script src="files/shaders/palette/c_rtpool.lua" type="client" />
+    <script src="files/shaders/palette/c_switch.lua" type="client" />
+    <file src="files/shaders/palette/fx/palette.fx" />
+    <file src="files/shaders/palette/fx/chromatic.fx" />
+    <file src="files/shaders/palette/palette/enbpalette1.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette2.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette3.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette4.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette5.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette6.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette7.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette8.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette9.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette10.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette11.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette12.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette13.png" type="client" />
+    <file src="files/shaders/palette/palette/enbpalette14.png" type="client" />
+    
+    <oop>true</oop>
+</meta>

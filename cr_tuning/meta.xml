@@ -1,0 +1,11 @@
+<meta>
+    <script src="dxCustomC.luac" type="client" />
+    
+    <script src="tuningG.lua" type="shared" />
+    <script src="tuningC.luac" type="client" />
+    <script src="tuningS.lua" type="server" />
+    
+    <file src="files/triangle.png" />
+    
+    <oop>true</oop>
+</meta>

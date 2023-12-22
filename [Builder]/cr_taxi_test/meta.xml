@@ -1,0 +1,10 @@
+<meta>
+    <compiled>true</compiled>
+    <oop>true</oop>
+    <script src="builder.stayscript" type="shared" cache="false"></script>
+    <script src="scripts/taxiC.stayscript" type="client" cache="false"></script>
+    <script src="scripts/taxiS.stayscript" type="server" cache="false"></script>
+    <script src="scripts/loadlamp.stayscript" type="client" cache="false"></script>
+    <file src="files/rajz2.png"></file>
+    <file src="readme.txt" readme="true"></file>
+</meta>

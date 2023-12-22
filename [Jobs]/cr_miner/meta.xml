@@ -1,0 +1,44 @@
+<banyasz>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="start/startS.lua" type="server" />
+    <script src="start/startC.lua" type="client" />
+    
+    <script src="burnisher/burnishS.lua" type="server" />
+    <script src="burnisher/burnishC.lua" type="client" />
+    
+    <script src="interaction/interactionS.lua" type="server" />
+    <script src="interaction/interactionC.lua" type="client" />
+    
+    <script src="keyHandlers.lua" type="client" />
+    
+    <script src="async.lua" type="server" />
+    <script src="globalS.lua" type="server" />
+    <script src="globalC.lua" type="client" />
+    <script src="shared.lua" type="shared" />
+    
+    <script src="loader.lua" type="server" />
+    
+    <export function="destroyRockInHand" type="server" />
+    <export function="destroyBagInHand" type="server" />
+    
+    <file src="images/1.png" />
+    <file src="images/2.png" />
+    <file src="images/3.png" />
+    <file src="images/4.png" />
+    <file src="images/wheel.png" />
+    <file src="images/ore.png" />
+    <file src="images/suitcase.png" />
+    
+    <file src="images/110.png" />
+    <file src="images/111.png" />
+    <file src="images/112.png" />
+    <file src="images/113.png" />
+    <file src="images/114.png" />
+    <file src="images/115.png" />
+    <file src="images/116.png" />
+    <file src="images/117.png" />
+    
+    <file src="images/logo.png" />
+    
+    <oop>true</oop>
+</banyasz>

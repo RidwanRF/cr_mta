@@ -1,0 +1,13 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    
+    <file src="files/fuelgunmove.wav" />
+    <file src="files/fuelreceiptminta.png" />
+    <file src="files/fuelreceipt.png" />
+    <file src="FX/texturechanger.fx" type="client" />
+    <file src="files/fuel.mp3" />
+    <file src="files/Awesome.ttf" />
+    <file src="files/fake-receipt.ttf" />
+    <min_mta_version client="1.3.0-9.04435" server="1.3.0-9.04435" />
+</meta>

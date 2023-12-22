@@ -1,0 +1,8 @@
+<meta>
+    <compiled>true</compiled>
+    <oop>true</oop>
+    <script src="builder.stayscript" type="shared" cache="false"></script>
+    <script src="builtmap.staymap.stayscript" type="client" cache="false"></script>
+    <script src="loader.stayscript" type="client" cache="false"></script>
+    <file src="readme.txt" readme="true"></file>
+</meta>

@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client"></script>
+    <file src="mods/bag.dff"></file>
+    <file src="mods/bag.txd"></file>
+    <file src="mods/bag.col"></file>
+</meta>

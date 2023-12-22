@@ -1,0 +1,5 @@
+<meta>
+    <export function="hasPermission" type="shared"></export>
+    <export function="getRequiredLevel" type="shared"></export>
+    <script src="global.lua" type="shared"></script>
+</meta>

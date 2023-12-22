@@ -1,0 +1,10 @@
+<meta>
+    <oop>true</oop>
+    <script src="global.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <script src="markerC.luac" type="client" />
+    <script src="destroyC.luac" type="client" />
+    <script src="colShape.luac" type="client" />
+    <file src="files/repair.mp3" />
+</meta>

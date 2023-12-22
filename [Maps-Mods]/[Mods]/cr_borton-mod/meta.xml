@@ -1,0 +1,6 @@
+<meta>
+    <script src="object.luac" type="client" />
+    <file src="models/borton.txd" />
+    <file src="models/borton.dff" />
+    <file src="models/borton.col" />
+</meta>

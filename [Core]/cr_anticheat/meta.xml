@@ -1,0 +1,16 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    
+    <script src="server.lua" type="server" />
+    
+    <script src="blockedSerial/blockedSerialS.lua" type="server" />
+    
+    <script src="command/commandS.lua" type="server" />
+    
+    <script src="elementData/elementDataS.lua" type="server" />
+    
+    <script src="screen/screenC.lua" type="client" />
+    
+    <script src="money/client.lua" type="client" />
+</meta>

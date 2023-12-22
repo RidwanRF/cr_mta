@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="bg">
+			<div id="navbar">
+				<div id="listhome" onclick="navigateToPage(1)" class="listBTN" style="top: 1%; left: 0.6%;"></div>
+				<div id="listmembers" onclick="navigateToPage(2)" class="listBTN" style="top: 15%; left: 0.6%;"></div>
+				<div id="listvehicles" onclick="navigateToPage(3)" class="listBTN" style="top: 28.5%; left: 0.6%;"></div>
+				<div id="listranks" onclick="navigateToPage(4)" class="listBTN" style="top: 42.5%; left: 0.6%;"></div>
+				<div id="liststorage" onclick="navigateToPage(5)" class="listBTN" style="top: 56.5%; left: 0.6%;"></div>
+				<div id="listduty" onclick="navigateToPage(6)" class="listBTN" style="top: 70%; left: 0.5%;"></div>
+			</div>
+			<div class="factionbg"></div>
+			<div id="factionlist" class="factionlist">
+			
+			</div>
+			<div id="home" style="display: none;">
+				<div class="details">
+					<p style="color: white; text-align: center;">Tagok száma: <font id="membercount" color="orange">0</font> (<font id="membersonline" color="green">0</font> <font color="green">online</font>)</p>
+					<p style="color: white; text-align: center;">Rangok száma: <font id="rankcount" color="orange">0</font></p>
+					<p style="color: white; text-align: center;">Járművek száma: <font id="vehiclecount" color="orange">0</font></p>
+					<p style="color: white; text-align: center;">Létrehozva: <font id="created" color="orange">0000-00-00 00:00:00</font></p>
+				</div>
+				<div class="msgs">
+					<p id="msg" style="color: white; margin: 5px; paddig: 5px;"></p>
+				</div>
+				<div class="messageAction" id="messageAction" onClick="changeMSG();" style="display: none">Szerkesztés</div>
+				<div class="messageAction" id="withdrawAction" onClick="withdraw();" style="display: none; top: 87%; left: 54.5%;">Kifizetés</div>
+				<div class="messageAction" id="depositAction" onClick="deposit();" style="display: block; top: 87%; left: 92.25%;">Befizetés</div>
+				<div class="money"></div>
+				<p class="balance"><font color="orange">Frakció</font> egyenleg: <font color="orange">$</font><font id="money">0</font></p>
+			</div>
+			<div id="members" style="display: none;">
+				<div class="membersBg"></div>
+				<div id="memberlist" class="members"></div>
+				<div id="memberDetails" style="display: none;">
+					<div class="detailCell">Rang: <font id="detailRank"></font></div>
+					<div class="detailCell">Leader: <font id="detailIsLeader"></font></div>
+					<div class="detailCell">Fizetés: <font id="detailSalary" color="orange"></font></div>
+					<div id="detailJoined" class="detailCell"></div>
+					<div id="detailLastPlace" class="detailCell"></div>
+				</div>
+				<div id="memberActions" style="display: none;">
+					<div class="inviteAction" onClick="showInvite();"></div>
+					<div class="promoteAction" onClick="promote();"></div>
+					<div class="demoteAction" onClick="demote();"></div>
+					<div class="setLeaderAction" onClick="toggleLeader();"></div>
+					<div class="kickAction" onClick="kick();"></div>
+				</div>
+			</div>
+			<div id="vehicles" style="display: none;">
+				<div class="vehiclesBg"></div>
+				<div id="vehiclelist" class="vehicles">
+				
+				</div>
+				<div id="vehicleDetails" style="display: none;">
+					<div class="vehicleDetailCell">Azonosító: <font id="vehicleID">0</font></div>
+					<div id="vehicleLocation" class="vehicleDetailCell">Ismeretlen</div>
+				</div>
+				<div id="vehicleActions" style="display: none;">
+					<div class="keyAction" onClick="getKey();">Kulcs igénylése</div>
+				</div>
+			</div>
+			<div id="ranks" style="display: none;">
+				<div class="ranksBg"></div>
+				<div id="ranklist" class="ranks">
+					
+				</div>
+				<div id="rankDetails" style="display: none;">
+					<div id="rankName" class="rankDetailCell">Rang: <font color="orange">Ismeretlen</font></div>
+					<div id="rankSalary" class="rankDetailCell">Fizetés: <font color="orange">$</font>0</div>
+				</div>
+				<div id="rankActions" style="display: none;">
+					<div id="rankActionlist" class="rankActionlist">
+						<div class="rankAction" onClick="createRank();">Rang hozzáadása</div>
+						<div class="rankAction" onClick="editRank();">Rang szerkesztése</div>
+						<div class="rankAction" onClick="deleteRank();">Rang törlése</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="storage" style="display: none;">
+				<div class="storageBg"></div>
+				<div id="storageList" class="storage">
+					
+				</div>
+				<div id="storageDetails" style="display: none;">
+					<div class="storageDetailCell">Darabszám: <font id="itemCountDetail" color="orange">0</font></div>
+				</div>
+				<div id="storageActions" style="display: none;">
+					<div class="storageAction" onClick="deleteStorageItem();">Tárgy törlése</div>
+				</div>
+			</div>
+			<div id="duty" style="display: none;">
+				<div class="dutyBg"></div>
+				<div id="dutyList" class="duty">
+					
+				</div>
+				<div id="dutyDetails" style="display: none;">
+					<div class="dutyDetailCell" id="dutyName">Név: <font color="orange" id="dutyName">-</font></div>
+					<div class="dutyDetailCell" id="dutyDate">0000.00.00. <font color="orange">00:00:00</font></div>
+					<div class="dutyDetailCell" style="font-size: 12px;">Szükséges rang: <font color="orange" id="dutyRank">undefined</font></div>
+				</div>
+				<div id="dutyActions" style="display: none;">
+					<div class="dutyAction" onClick="createDuty();">Duty létrehozása</div>
+					<div class="dutyAction" onClick="editDuty();">Duty szerkesztése</div>
+					<div class="dutyAction" onClick="deleteDuty();">Duty törlése</div>
+				</div>
+			</div>
+		</div>
+		<div id="invitePanel" class="invitePanel" style="display: none;">
+			<input type="text" placeholder="Játékos neve vagy ID" id="usr-text" />
+			<button id="send" onClick="confirmInvitePanel();">Felvétel</button>
+			<button id="close" onClick="closeInvitePanel();">Bezárás</button>
+			<div id="recommendation"><font color="red">Nincs találat.</font></div>
+		</div>
+		<div id="rankPanel" class="rankPanel" style="display: none;">
+			<input type="text" placeholder="Rang neve" maxlength="15" id="rankNameEdit" class="rank-text" />
+			<span class="currency">$</span><input type="text" placeholder="Rang fizetése" id="rankSalaryEdit" class="rank-salary" />
+			<button id="send" onClick="saveRank();">Mentés</button>
+			<button id="close" onClick="closeRankPanel();">Bezárás</button>
+			
+			<div class="permissionPanel"></div>
+			<div id="permissionContent" class="permissionContent">
+
+			</div>
+		</div>
+		<div id="dutyPanel" class="dutyPanel" style="display: none;">
+			<input type="text" placeholder="Duty neve" maxlength="15" id="dutyNameEdit" class="duty-text" />
+			<div id="itemList">
+				
+			</div>
+			<div id="selectedItems">
+				
+			</div>
+			<input type="text" placeholder="Darabszám" id="listItemCount" class="duty-text" style="display: none; width: 100px; top: 25%; left: 50%;"value="1" />
+			<div class="dutyPanelButton" id="addButton" style="display: none;" onClick="addItemToSelected();"><strong>+</strong> <i>Hozzáad</i></div>
+			<div class="dutyPanelButton2" id="removeButton" style="display: none;" onClick="removeFromSelected();"><strong>-</strong> <i>Töröl</i></div>
+			<select id="dutyRanks" class="rankSelect" style="width: 100px; top: 50%; left: 50%;">
+				
+			</select>
+			<button id="confirm" onClick="saveDuty();">Mentés</button>
+			<button id="cancel" onClick="closeDutyPanel();">Bezárás</button>
+		</div>
+		<div id="messagePanel" style="display: none; padding: 5px;">
+			<textarea rows="10" style="width: 100%; height: 80%; border-radius: 20px; padding: 15px; outline-width: 0; resize: none;" id="factionMessage" placeholder="Ide írhatod a frakció üzeneted!"></textarea>
+			<button id="saveMessage" onClick="saveMessage();">Mentés</button>
+			<button id="closeMessage" onClick="closeMessage();">Bezárás</button>
+		</div>
+		<div id="depositPanel" style="display: none; padding: 5px;">
+			<input type="number" placeholder="Befizetni kívánt összeg." id="depAmount" class="money-text" />
+			<button id="saveMessage" onClick="depositMoney();">Befizetés</button>
+			<button id="closeMessage" onClick="closeDepositPanel();">Bezárás</button>
+		</div>
+		<div id="withdrawPanel" style="display: none; padding: 5px;">
+			<input type="number" placeholder="Kifizetni kívánt összeg." id="witAmount" class="money-text" />
+			<button id="saveMessage" onClick="withdrawMoney();">Kifizetés</button>
+			<button id="closeMessage" onClick="closeWithdrawPanel();">Bezárás</button>
+		</div>
+	</body>
+	<script src="jquery.min.js"></script>
+	<script src="faction.js"></script>
+	<script>
+		$(document).ready(function() {
+			mta.triggerEvent("requestData");
+		});
+	</script>
+</html>

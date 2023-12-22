@@ -1,0 +1,11 @@
+<contract>
+    <script src="async.lua" type="shared" />
+    <script src="codeS.lua" type="server" />
+    <script src="codeC.luac" type="client" />
+    
+    <file src="files/adasveteli.png" />
+    <file src="FX/texturechanger.fx" type="client" />
+    <file src="files/Awesome.ttf" />
+    <file src="files/fake-receipt.ttf" />
+    <oop>true</oop>
+</contract>

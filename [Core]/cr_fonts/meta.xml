@@ -1,0 +1,24 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.lua" type="client" />
+    <export function="getFont" type="client" />
+    
+    <file src="files/Rubik-Regular.ttf" />
+    <file src="files/Rubik-Bold.ttf" />
+    <file src="files/Rubik-Black.ttf" />
+    <file src="files/Rubik-BlackItalic.ttf" />
+    <file src="files/Rubik-BoldItalic.ttf" />
+    <file src="files/Rubik-Italic.ttf" />
+    <file src="files/Rubik-Light.ttf" />
+    <file src="files/Rubik-LightItalic.ttf" />
+    <file src="files/Rubik-Medium.ttf" />
+    <file src="files/Rubik-MediumItalic.ttf" />
+    <file src="files/gotham_light.ttf" />
+    <file src="files/Roboto.ttf" />
+    <file src="files/FontAwesome.ttf" />
+    <file src="files/gtaFont.ttf" />
+    <file src="files/loginfont.ttf" />
+    <file src="files/Yantramanav-Black.ttf" />
+    <file src="files/Yantramanav-Regular.ttf" />
+    <file src="files/Azzardo-Regular.ttf" />
+</meta>

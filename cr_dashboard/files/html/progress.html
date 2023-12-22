@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=hu>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<meta charset="utf-8">
+
+		<style>
+			@font-face {
+				font-family: "Rubik";
+				src: url("Rubik.ttf");
+			}
+
+		    svg.progress-circle {
+		    	height: 1em;
+		    }
+
+		    svg.progress-circle text {
+		    	fill: #ffffff;
+		    	font-family: "Rubik";
+		    }
+
+		    svg.progress-circle circle {
+		   		fill: none;
+		    }
+
+		    svg.progress-circle circle.bg {
+			    r: 15.8;
+			   	stroke: rgb(0, 0, 0);
+			    stroke-width: 2.5;
+			    opacity: 0.5;
+		    }
+
+		    svg.progress-circle circle.progress {
+			    r: 15.8;
+			    stroke-width: 2;
+			    stroke-dasharray: 100;
+			    stroke-dashoffset: 100;
+			    transition: stroke-dashoffset .5s ease-out;
+		    }
+		</style>
+	</head>
+
+	<body>
+		<svg style="font-size: 20vw" class="progress-circle" viewBox="0 0 44 44">
+			<text x="18" y="4" font-size="7" text-anchor="middle" alignment-baseline="central">Élet</text>
+			<text x="18" y="26" font-size="7" text-anchor="middle" alignment-baseline="central" id="healthtext">0%</text>
+			
+			<circle class="bg" cx="18" cy="26"></circle>
+			<circle class="progress" cx="18" cy="26" stroke="rgb(210, 77, 87)" transform="rotate(-90, 18, 26)" id="healthprogress"></circle>
+		</svg>
+
+		<svg style="font-size: 20vw" class="progress-circle" viewBox="0 0 44 44">
+			<text x="18" y="4" font-size="7" text-anchor="middle" alignment-baseline="central">Páncél</text>
+			<text x="18" y="26" font-size="7" text-anchor="middle" alignment-baseline="central" id="armortext">0%</text>
+			
+			<circle class="bg" cx="18" cy="26"></circle>
+			<circle class="progress" cx="18" cy="26" stroke="rgb(74, 158, 222)" transform="rotate(-90, 18, 26)" id="armorprogress"></circle>
+		</svg>
+
+		<svg style="font-size: 20vw" class="progress-circle" viewBox="0 0 44 44">
+			<text x="18" y="4" font-size="7" text-anchor="middle" alignment-baseline="central">Étel</text>
+			<text x="18" y="26" font-size="7" text-anchor="middle" alignment-baseline="central" id="foodtext">0%</text>
+			
+			<circle class="bg" cx="18" cy="26"></circle>
+			<circle class="progress" cx="18" cy="26" stroke="rgb(182, 167, 64)" transform="rotate(-90, 18, 26)" id="foodprogress"></circle>
+		</svg>
+
+		<svg style="font-size: 20vw" class="progress-circle" viewBox="0 0 44 44">
+			<text x="18" y="4" font-size="7" text-anchor="middle" alignment-baseline="central">Ital</text>
+			<text x="18" y="26" font-size="7" text-anchor="middle" alignment-baseline="central" id="drinktext">0%</text>
+			
+			<circle class="bg" cx="18" cy="26"></circle>
+			<circle class="progress" cx="18" cy="26" stroke="rgb(102, 204, 255)" transform="rotate(-90, 18, 26)" id="drinkprogress"></circle>
+		</svg>
+
+		<script type="text/javascript">
+			function setProgress(target, progress) {
+        		document.getElementById(target + "text").innerHTML = progress + "%";
+        		document.getElementById(target + "progress").style.strokeDashoffset = 100 - progress;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="importer.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="barC.lua" type="client" />
+    <file src="files/bottom.png" />
+    <file src="files/top.png" />
+    <file src="files/center.png" />
+    <file src="files/staymta.png" />
+    <file src="files/wheel.wav" />
+</meta>

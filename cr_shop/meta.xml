@@ -1,0 +1,15 @@
+<shop>
+    <script src="async.lua" type="server" />
+    
+    <script src="codeS.lua" type="server" />
+    <script src="codeC.lua" type="client" />
+    
+    <file src="files/basket.dff" />
+    <file src="files/basket.txd" />
+    <file src="files/basket.png" />
+    <file src="files/hand.png" />
+    <file src="files/minus.png" />
+    <file src="files/dot.png" />
+    
+    <oop>true</oop>
+</shop>

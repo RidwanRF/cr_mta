@@ -1,0 +1,6 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="files/texturechanger.fx" />
+    <file src="files/waterclear256.png" />
+    <file src="files/waterwake.png" />
+</meta>

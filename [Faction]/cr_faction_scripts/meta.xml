@@ -1,0 +1,29 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="global.lua" type="shared" />
+    <script src="duty.lua" type="client" />
+    <script src="commands.lua" type="client" />
+    <script src="commands_s.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    
+    <script src="ticket/ticket_server.lua" type="server" />
+    <script src="ticket/ticket_client.lua" type="client" />
+    
+    <export function="createTicket" type="server" />
+    
+    <file src="files/Roboto.ttf" />
+    <file src="files/FontAwesome.ttf" />
+    <file src="files/Roboto-Bold.ttf" />
+    
+    <file src="html/ticket/style.css" />
+    <file src="html/ticket/script.js" />
+    <file src="html/ticket/ticket.html" />
+    
+    <file src="html/scripts/jquery.min.js" />
+    <file src="html/scripts/bootstrap.min.js" />
+    
+    <file src="files/radioSound.mp3" />
+    
+    <oop>true</oop>
+</meta>

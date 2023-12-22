@@ -1,0 +1,17 @@
+<meta>
+    <script src="jobG.lua" type="shared" />
+    <script src="jobC.lua" type="client" />
+    <script src="jobS.lua" type="server" />
+    
+    <file src="html/index.html" />
+    
+    <file src="html/styles/bootstrap.min.css" />
+    
+    <file src="html/scripts/bootstrap.min.js" />
+    <file src="html/scripts/jquery.min.js" />
+    
+    <export function="getJobName" type="shared" />
+    <export function="getPaymentMultiplier" type="shared" />
+    
+    <oop>true</oop>
+</meta>

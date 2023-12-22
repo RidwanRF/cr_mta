@@ -1,0 +1,8 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    
+    <export function="getPlayer" type="shared" />
+    <export function="getPlayers" type="shared" />
+</meta>

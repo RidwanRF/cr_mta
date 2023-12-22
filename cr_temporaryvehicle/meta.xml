@@ -1,0 +1,15 @@
+<temporaryveh>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="codeS.lua" type="server" />
+    <script src="codeC.luac" type="client" />
+    <script src="async.lua" type="server" />
+    
+    <export function="createJobVehicle" type="server" />
+    <export function="getJobVehicle" type="server" />
+    <export function="deleteJobVehicle" type="server" />
+    
+    <export function="createTemporaryVehicle" type="server" />
+    <export function="deleteTemporaryVehicle" type="server" />
+    
+    <oop>true</oop>
+</temporaryveh>

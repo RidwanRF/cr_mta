@@ -1,0 +1,4 @@
+<meta>
+    <script src="waterfix.lua" type="client" />
+    <script src="client.lua" type="client" />
+</meta>

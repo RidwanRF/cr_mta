@@ -1,0 +1,32 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/alap.txd" />
+    <file src="models/alap.dff" />
+    <file src="models/alap.col" />
+    
+    <file src="models/bank.txd" />
+    <file src="models/bank.dff" />
+    <file src="models/bank.col" />
+    
+    <file src="models/drill.txd" />
+    <file src="models/drill.dff" />
+    <file src="models/drill.col" />
+    
+    <file src="models/laptop.txd" />
+    <file src="models/laptop.dff" />
+    <file src="models/laptop.col" />
+    
+    <file src="models/jammer.txd" />
+    <file src="models/jammer.dff" />
+    <file src="models/jammer.col" />
+    
+    <file src="models/adam_v_door.txd" />
+    <file src="models/adam_v_door.dff" />
+    <file src="models/adam_v_door.col" />
+    
+    
+    <file src="models/rcbandit.txd" />
+    <file src="models/rcbandit.dff" />
+    <oop>true</oop>
+</meta>

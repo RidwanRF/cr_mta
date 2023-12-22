@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <object id="object (mul_LAS) (2)" breakable="true" interior="0" alpha="255" model="5020" doublesided="false" scale="1" dimension="0" posX="1085.8" posY="-1633.9" posZ="14.3" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (mul_LAS) (3)" breakable="true" interior="0" alpha="255" model="5020" doublesided="false" scale="1" dimension="0" posX="1114.7" posY="-1633.9" posZ="14.4" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (mul_LAS) (4)" breakable="true" interior="0" alpha="255" model="5020" doublesided="false" scale="1" dimension="0" posX="1123.4" posY="-1633.9" posZ="14.4" rotX="0" rotY="0" rotZ="270"></object>
+</map>

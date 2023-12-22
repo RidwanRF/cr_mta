@@ -1,0 +1,67 @@
+<meta>
+    <script src="mainC.luac" type="client" />
+    
+    <!-- SKINEK -->
+    <file src="skins/10.txd" />
+    <file src="skins/10.dff" />
+    <file src="skins/11.txd" />
+    <file src="skins/11.dff" />
+    <file src="skins/12.txd" />
+    <file src="skins/12.dff" />
+    <file src="skins/15.txd" />
+    <file src="skins/15.dff" />
+    <file src="skins/16.txd" />
+    <file src="skins/16.dff" />
+    <file src="skins/17.txd" />
+    <file src="skins/17.dff" />
+    <file src="skins/21.txd" />
+    <file src="skins/21.dff" />
+    <file src="skins/22.txd" />
+    <file src="skins/22.dff" />
+    <file src="skins/25.txd" />
+    <file src="skins/25.dff" />
+    <file src="skins/26.txd" />
+    <file src="skins/26.dff" />
+    <file src="skins/27.txd" />
+    <file src="skins/27.dff" />
+    <file src="skins/30.txd" />
+    <file src="skins/30.dff" />
+    <file src="skins/31.txd" />
+    <file src="skins/31.dff" />
+    <file src="skins/32.txd" />
+    <file src="skins/32.dff" />
+    <file src="skins/40.txd" />
+    <file src="skins/40.dff" />
+    <file src="skins/41.txd" />
+    <file src="skins/41.dff" />
+    <file src="skins/43.txd" />
+    <file src="skins/43.dff" />
+    <file src="skins/44.txd" />
+    <file src="skins/44.dff" />
+    
+    
+    <!-- Sheriffség -->
+    <file src="skins/280.txd" />
+    <file src="skins/280.dff" />
+    <file src="skins/281.txd" />
+    <file src="skins/281.dff" />
+    <file src="skins/282.txd" />
+    <file src="skins/282.dff" />
+    <file src="skins/283.txd" />
+    <file src="skins/283.dff" />
+    <!-- VIP Skinek -->
+    <file src="skins/101.txd" />
+    <file src="skins/101.dff" />
+    <file src="skins/126.txd" />
+    <file src="skins/126.dff" />
+    <file src="skins/127.txd" />
+    <file src="skins/127.dff" />
+    <!-- <file src="skins/252.txd" /> -->
+    <!-- <file src="skins/252.dff" /> -->
+    <!-- <file src="skins/253.txd" /> -->
+    <!-- <file src="skins/253.dff" /> -->
+    <!-- <file src="skins/254.txd" /> -->
+    <!-- <file src="skins/254.dff" />	 -->
+    <!-- <file src="skins/255.txd" /> -->
+    <!-- <file src="skins/255.dff" /> -->
+</meta>

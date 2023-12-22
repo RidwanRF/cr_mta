@@ -1,0 +1,1356 @@
+@font-face {
+    font-family: roboto;
+    src: url('http://mta/local/files/assets/Roboto.ttf');
+}
+
+body {
+	/* background-color: grey; */
+	font-family: roboto;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+	font-size: 12px;
+}
+
+#navbar {
+	position: fixed;
+	top: 50%;
+	left: 36.7%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/menu/bg.png');
+	width: 175px;
+	height: 166px;
+	z-index: 1;
+}
+
+.listBTN {
+	position: fixed;
+	background-color: rgba(50, 50, 50, 0);
+	color: white;
+	width: 172px;
+	height: 21px;
+	z-index: 1;
+}
+
+#listhome:hover {
+	background-image: url('http://mta/local/files/assets/list/1.png');
+} 
+
+#listmembers:hover {
+	background-image: url('http://mta/local/files/assets/list/2.png');
+}
+
+#listvehicles:hover {
+	background-image: url('http://mta/local/files/assets/list/3.png');
+} 
+
+#listranks:hover {
+	background-image: url('http://mta/local/files/assets/list/4.png');
+} 
+
+#liststorage:hover {
+	background-image: url('http://mta/local/files/assets/list/5.png');
+} 
+
+#listduty:hover {
+	background-image: url('http://mta/local/files/assets/list/6.png');
+} 
+
+.activehome {
+	background-image: url('http://mta/local/files/assets/list/1.png');
+}
+
+.activemembers {
+	background-image: url('http://mta/local/files/assets/list/2.png');
+}
+
+.activevehicles {
+	background-image: url('http://mta/local/files/assets/list/3.png');
+}
+
+.activeranks {
+	background-image: url('http://mta/local/files/assets/list/4.png');
+}
+
+.activestorage {
+	background-image: url('http://mta/local/files/assets/list/5.png');
+}
+
+.activeduty {
+	background-image: url('http://mta/local/files/assets/list/6.png');
+}
+
+
+#bg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg2.png');
+	width: 860px;
+	height: 450px;
+	z-index: 0;
+}
+
+.details {
+	position: fixed;
+	top: 19%;
+	left: 73.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/main/details.png');
+	width: 425px;
+	height: 150px;
+	z-index: 1;
+	font-size: 13px;
+}
+
+.msgs {
+	position: fixed;
+	top: 55%;
+	left: 73.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/main/msg.png');
+	width: 425px;
+	height: 150px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: auto;
+	cursor: default;
+}
+
+#msg {
+	padding: 15px;
+}
+
+.money {
+	position: fixed;
+	top: 95%;
+	left: 73.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/main/msg.png');
+	width: 425px;
+	height: 25px;
+	z-index: 1;
+	/* text-align: center; */
+}
+
+.factionbg {
+	position: fixed;
+	top: 50%;
+	left: 13%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/list/bg.png');
+	width: 205px;
+	height: 425px;
+}
+
+.factionlist {
+	position: fixed;
+	top: 47%;
+	left: 13%;
+	transform: translate(-50%, -50%);
+	width: 205px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.members {
+	position: fixed;
+	top: 46.7%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 226px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.membersBg {
+	position: fixed;
+	top: 50%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/members/bg.png');
+	width: 226px;
+	height: 425px;
+	z-index: 1;
+}
+
+.factionElement {
+	/* position: fixed; */
+	/* top: 0%; */
+	/* left: 1%; */
+	margin: 2px;
+	color: white;
+	width: 201px;
+	height: 26px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px; 
+	line-height: 26px;
+}
+
+.factionElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(25, 25, 25, 1); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 153, 51, 0.8); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 153, 73, 0.8); 
+}
+
+.balance {
+	position: fixed;
+	top: 92%;
+	left: 73.5%;
+	transform: translate(-50%, -50%);
+	width: 425px;
+	height: 25px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 25px;
+}
+
+.activefaction {
+	background-color: rgba(255, 153, 51, 0.8); 
+	color: black;
+}
+
+.memberElement {
+	margin: 2px;
+	color: white;
+	width: 222px;
+	height: 21px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px;
+	line-height: 21px;
+}
+
+.memberElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.activemember {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+#memberDetails {
+	position: fixed;
+	top: 19%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/members/details/bg.png');
+	width: 196px;
+	height: 146px;
+	z-index: 1;
+}
+
+#memberActions {
+	position: fixed;
+	top: 81%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/members/action/bg.png');
+	width: 196px;
+	height: 146px;
+	z-index: 1;
+}
+
+.detailCell {
+	background-color: rgba(25, 25, 25, 1);
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.vehicleDetailCell {
+	background-color: rgba(25, 25, 25, 1);
+	width: 189px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.inviteAction {
+	background: #191919 url('http://mta/local/files/assets/members/action/buttons/1.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.inviteAction:hover {
+	background: rgba(255, 153, 51, 0.8) url('http://mta/local/files/assets/members/action/buttons/1_c.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.promoteAction {
+	background: #191919 url('http://mta/local/files/assets/members/action/buttons/2.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.promoteAction:hover {
+	background: rgba(255, 153, 51, 0.8) url('http://mta/local/files/assets/members/action/buttons/2_c.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.demoteAction {
+	background: #191919 url('http://mta/local/files/assets/members/action/buttons/3.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.demoteAction:hover {
+	background: rgba(255, 153, 51, 0.8) url('http://mta/local/files/assets/members/action/buttons/3_c.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.setLeaderAction {
+	background: #191919 url('http://mta/local/files/assets/members/action/buttons/4.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.setLeaderAction:hover {
+	background: rgba(255, 153, 51, 0.8) url('http://mta/local/files/assets/members/action/buttons/4_c.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.kickAction {
+	background: #191919 url('http://mta/local/files/assets/members/action/buttons/5.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.kickAction:hover {
+	background: rgba(255, 153, 51, 0.8) url('http://mta/local/files/assets/members/action/buttons/5_c.png');
+	width: 192px;
+	height: 22px;
+	margin: 2px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.invitePanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg2.png');
+	width: 400px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+.inviteBackground {
+	filter:blur(10px);
+    -o-filter:blur(10px);
+    -ms-filter:blur(10px);
+    -moz-filter:blur(10px);
+    -webkit-filter:blur(10px);
+}
+
+#send {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(0, 150, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(0, 150, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 85%;
+	left: 1.25%;
+	transition: background-color 1s ease;
+	background-color: rgba(0, 150, 0, 0.7);
+}
+
+#send:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+#close {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(150, 0, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(150, 0, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 85%;
+	left: 74%;
+	transition: background-color 1s ease;
+	background-color: rgba(150, 0, 0, 0.7);
+}
+
+#close:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+#usr-text {
+	position: fixed;
+	width: 250px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 45%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	transition: color 1s ease;
+	color: white;
+}
+
+#usr-text:focus {
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black;
+}
+
+#recommendation {
+	position: fixed;
+	top: 70%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+}
+.vehiclesBg {
+	position: fixed;
+	top: 50%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/vehicle/bg.png');
+	width: 225px;
+	height: 425px;
+	z-index: 1;
+}
+
+.vehicles {
+	position: fixed;
+	top: 46.7%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 225px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+
+.vehicleElement {
+	margin: 2px;
+	color: white;
+	width: 222px;
+	height: 21px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px; 
+	line-height: 21px;
+}
+
+.vehicleElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.activeVehicle {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+#vehicleActions {
+	position: fixed;
+	top: 91.6%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/vehicle/button/bg.png');
+	width: 192px;
+	height: 50px;
+	z-index: 1;
+}
+
+.keyAction {
+	background: #191919;
+	width: 187px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.keyAction:hover {
+	background: rgba(255, 153, 51, 0.8);
+	width: 187px;
+	height: 22px;
+	margin: 2px;
+	text-align: center;
+	color: black;
+}
+
+#vehicleDetails {
+	position: fixed;
+	top: 11%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/vehicle/details/bg.png');
+	width: 192px;
+	height: 74px;
+	z-index: 1;
+}
+
+.ranksBg {
+	position: fixed;
+	top: 50%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/ranks/bg.png');
+	width: 225px;
+	height: 425px;
+	z-index: 1;
+}
+
+.ranks {
+	position: fixed;
+	top: 46.7%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 225px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+#rankDetails {
+	position: fixed;
+	top: 11%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/ranks/details/bg.png');
+	width: 192px;
+	height: 74px;
+	z-index: 1;
+}
+
+#rankActions {
+	position: fixed;
+	top: 85.5%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/ranks/button/bg.png');
+	width: 192px;
+	height: 104px;
+	z-index: 1;
+}
+
+.rankActionlist {
+	position: fixed;
+	top: 57%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 192px;
+	height: 104px;
+	z-index: 1;
+}
+
+.rankAction {
+	background: #191919;
+	width: 187px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.rankAction:hover {
+	background: rgba(255, 153, 51, 0.8);
+	width: 187px;
+	height: 22px;
+	margin: 2px;
+	text-align: center;
+	color: black;
+}
+
+.rankDetailCell {
+	background-color: rgba(25, 25, 25, 1);
+	width: 187px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	border: 1px solid rgba(25, 25, 25, 1);
+	outline-width: 0px;
+	line-height: 22px;
+}
+
+.rankElement {
+	margin: 2px;
+	color: white;
+	width: 222px;
+	height: 21px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px; 
+	line-height: 21px;
+}
+
+.rankElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.activeRank {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.rankPanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg2.png');
+	width: 400px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rank-text {
+	position: fixed;
+	width: 250px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 25%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	transition: color 1s ease;
+	color: white;
+}
+
+.rank-salary {
+	position: fixed;
+	width: 250px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 45%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	transition: color 1s ease;
+	color: white;
+}
+
+.rank-text:focus {
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black; 
+}
+
+.rank-salary:focus {
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black;
+}
+
+.currency {
+	position: fixed;
+	top: 45%;
+	left: 7%;
+	transform: translate(-50%, -50%);
+	z-index: 69;
+	color: orange;
+}
+
+.storageBg {
+	position: fixed;
+	top: 50%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/storage/bg.png');
+	width: 225px;
+	height: 425px;
+	z-index: 1;
+}
+
+#storageDetails {
+	position: fixed;
+	top: 8%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/storage/details/bg.png');
+	width: 192px;
+	height: 50px;
+	z-index: 1;
+}
+
+.storageDetailCell {
+	background-color: rgba(25, 25, 25, 1);
+	/* width: 192px; */
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.storage {
+	position: fixed;
+	top: 46.7%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 225px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.storageElement {
+	margin: 2px;
+	color: white;
+	width: 222px;
+	height: 21px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px; 
+	line-height: 21px;
+}
+
+.storageElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.activeItem {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+#storageActions {
+	position: fixed;
+	top: 91.5%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/storage/details/bg.png');
+	width: 192px;
+	height: 50px;
+	z-index: 1;
+}
+
+.storageAction {
+	background: #191919;
+	width: 188px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.storageAction:hover {
+	background: rgba(255, 153, 51, 0.8);
+	width: 188px;
+	height: 22px;
+	margin: 2px;
+	text-align: center;
+	color: black;
+}
+
+.dutyBg {
+	position: fixed;
+	top: 50%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/duty/bg.png');
+	width: 225px;
+	height: 425px;
+	z-index: 1;
+}
+
+#dutyDetails {
+	position: fixed;
+	top: 13.7%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/duty/details/bg.png');
+	width: 192px;
+	height: 98px;
+	z-index: 1;
+}
+
+.dutyDetailCell {
+	background-color: rgba(25, 25, 25, 1);
+	/* width: 192px; */
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+#dutyActions {
+	position: fixed;
+	top: 86.25%;
+	left: 87.5%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/duty/action/bg.png');
+	width: 192px;
+	height: 98px;
+	z-index: 1;
+}
+
+.dutyAction {
+	background: #191919;
+	width: 188px;
+	height: 22px;
+	margin: 2px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	line-height: 22px;
+}
+
+.dutyAction:hover {
+	background: rgba(255, 153, 51, 0.8);
+	width: 188px;
+	height: 22px;
+	margin: 2px;
+	text-align: center;
+	color: black;
+}
+
+.duty {
+	position: fixed;
+	top: 46.7%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 225px;
+	height: 395px;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.dutyElement {
+	margin: 2px;
+	color: white;
+	width: 222px;
+	height: 21px;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 2;
+	text-align: center;
+	font-size: 12px; 
+	line-height: 21px;
+}
+
+.dutyElement:hover {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.activeDutyElement {
+	color: black;
+	background-color: rgba(255, 153, 51, 0.8);
+}
+
+.dutyPanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg.png');
+	width: 600px;
+	height: 400px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+#confirm {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(0, 150, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(0, 150, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 92%;
+	left: 1.25%;
+	transition: background-color 1s ease;
+	background-color: rgba(0, 150, 0, 0.7);
+}
+
+#confirm:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+#cancel {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(150, 0, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(150, 0, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 92%;
+	left: 82.2%;
+	transition: background-color 1s ease;
+	background-color: rgba(150, 0, 0, 0.7);
+}
+
+#cancel:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+.duty-text {
+	position: fixed;
+	width: 250px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	transition: color 1s ease;
+	color: white;
+}
+
+.duty-text:focus {
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black; 
+}
+
+#itemList {
+	position: fixed;
+	top: 53%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(25, 25, 25, 0.7);
+	width: 200px;
+	height: 300px;
+	z-index: 4;
+	border-radius: 5px;
+	margin: 2px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+#selectedItems {
+	position: fixed;
+	top: 53%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(25, 25, 25, 0.7);
+	width: 200px;
+	height: 300px;
+	z-index: 4;
+	border-radius: 5px;
+	margin: 2px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.dutyPanelButton {
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	width: 100px;
+	height: 25px;
+	border-radius: 10px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	background-color: rgba(25, 25, 25, 0.7);
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	color: white;
+	line-height: 25px;
+}
+
+.dutyPanelButton:hover {
+	background-color: rgba(255, 153, 51, 0.5);
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	color: black;
+}
+
+.dutyPanelButton2 {
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	width: 100px;
+	height: 25px;
+	border-radius: 10px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	background-color: rgba(25, 25, 25, 0.7);
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	color: white;
+	line-height: 25px;
+}
+
+.dutyPanelButton2:hover {
+	background-color: rgba(255, 153, 51, 0.5);
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	color: black;
+}
+
+.rankSelect {
+	position: fixed;
+	width: 275px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	transition: color 1s ease;
+	color: white;
+	overflow:hidden;
+}
+
+.rankSelect:focus {
+	transition: background-color 1s ease;
+	transition: color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black; 
+}
+
+.permissionPanel {
+	position: fixed;
+	top: 50%;
+	left: 150%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	min-width: 200px;
+	height: 500px;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 5px;
+	color: white;
+}
+
+.permissionContent {
+	position: fixed;
+	top: 50%;
+	left: 150%;
+	transform: translate(-50%, -50%);
+	min-width: 200px;
+	height: 480px;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 5px;
+	color: white;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+	line-height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: orange;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.messageAction {
+	position: fixed;
+	top: 80%;
+	left: 73.5%;
+	transform: translate(-50%, -50%);
+	transition: background-color 2s ease, color;
+	background-color: rgba(0, 0, 0, 1);
+	width: 100px;
+	height: 35px;
+	z-index: 1;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+}
+
+.messageAction:hover {
+	transition: background-color 1s ease, color;
+	background-color: rgba(255, 153, 51, 0.8);
+	color: black;
+	cursor: pointer;
+}
+
+#messagePanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg.png');
+	width: 300px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+#saveMessage {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(0, 150, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(0, 150, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 85%;
+	left: 1.25%;
+	transition: background-color 1s ease;
+	background-color: rgba(0, 150, 0, 0.7);
+}
+
+#saveMessage:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+#closeMessage {
+	position: fixed;
+	width: 100px;
+	height: 25px;
+	border: 1px solid rgba(150, 0, 0, 0.7);
+	border-radius: 5px;
+	background-color: rgba(150, 0, 0, 0.7);
+	color: white;
+	outline-width: 0;
+	top: 85%;
+	left: 65%;
+	transition: background-color 1s ease;
+	background-color: rgba(150, 0, 0, 0.7);
+}
+
+#closeMessage:hover {
+	transition: background-color 1s ease;
+	background-color: rgba(255, 153, 51, 0.7);
+}
+
+#depositPanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg.png');
+	width: 300px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+
+#withdrawPanel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('http://mta/local/files/assets/bg.png');
+	width: 300px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 10px;
+}
+
+.money-text {
+	position: fixed;
+	width: 250px;
+	height: 35px;
+	border: 1px solid rgba(255, 153, 51, 0.9);
+	border-radius: 5px;
+	outline-width: 0;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: background-color 1s ease, color 1s ease;
+	background-color: rgba(255, 153, 51, 0.1);
+	color: white;
+}
+
+.money-text:focus {
+	transition: background-color 1s ease, color 1s ease;
+	background-color: rgba(255, 153, 51, 0.5);
+	color: black; 
+}

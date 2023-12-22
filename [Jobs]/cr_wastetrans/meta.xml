@@ -1,0 +1,23 @@
+<meta>
+	<script src="triggerHack.lua" type="shared" />
+	<script src="async.lua" type="shared" />
+	<script src="shared.lua" type="shared" />
+	
+	<script src="keyEventHandlers.lua" type="client" />
+	
+	<script src="loader.lua" type="server" />
+	
+	<script src="globalS.lua" type="server" />
+	<script src="globalC.lua" type="client" />
+	
+	<script src="start/startS.lua" type="server" />
+	<script src="start/startC.lua" type="client" />
+	
+	<script src="wastetrans/wastetransS.lua" type="server" />
+	<script src="wastetrans/wastetransC.lua" type="client" />
+	
+	<file src="images/logo.png" />
+	<file src="images/shovel.png" />
+	
+	<oop>true</oop>
+</meta>

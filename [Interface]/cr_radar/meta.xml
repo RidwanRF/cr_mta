@@ -1,0 +1,78 @@
+<meta>
+    <min_mta_version client="1.3.0-9.04431" />
+    <oop>true</oop>
+    <script src="sourceC.lua" type="client" />
+    <script src="c_blips.lua" type="client" />
+    <script src="c_3d.lua" type="client" />
+    <script src="gps/sourceC.lua" type="client" />
+    <script src="gps/vehicleNodes.lua" type="client" />
+    
+    <file src="assets/images/blips/gas_station.png" />
+    <file src="assets/images/blips/taxi.png" />
+    <file src="assets/images/blips/clothes_shop.png" />
+    <file src="assets/images/blips/car_shop.png" />
+    <file src="assets/images/blips/driving_license.png" />
+    <file src="assets/images/blips/border_crossing.png" />
+    <file src="assets/images/blips/job.png" />
+    <file src="assets/images/blips/hospital.png" />
+    <file src="assets/images/blips/police_hq.png" />
+    <file src="assets/images/blips/city_hall.png" />
+    <file src="assets/images/blips/shopping_mall.png" />
+    <file src="assets/images/blips/shop.png" />
+    <file src="assets/images/blips/airport.png" />
+    <file src="assets/images/blips/tuning_workshop.png" />
+    <file src="assets/images/blips/car_repair.png" />
+    <file src="assets/images/blips/target.png" />
+    <file src="assets/images/blips/mark.png" />
+    <file src="assets/images/blips/bank.png" />
+    <file src="assets/images/blips/disco.png" />
+    <file src="assets/images/blips/casino.png" />
+    <file src="assets/images/blips/mark_1.png" />
+    <file src="assets/images/blips/mark_2.png" />
+    <file src="assets/images/blips/mark_3.png" />
+    <file src="assets/images/blips/mark_4.png" />
+    <file src="assets/images/blips/house.png" />
+    <file src="assets/images/blips/garage.png" />
+    <file src="assets/images/blips/vehicle.png" />
+    <file src="assets/images/blips/racingtrack.png" />
+    <file src="assets/images/blips/car_destroyer.png" />
+    
+    
+    <file src="assets/images/map.png" />
+    <file src="assets/images/arrow.png" />
+    <file src="assets/images/target.png" /> 
+    <file src="assets/RubikStroke.otf" />
+    
+    <file src="assets/images/blips/loader.png" />
+    <file src="assets/images/blips/cel.png" />
+    <file src="assets/images/blips/piros.png" />
+    <file src="assets/images/blips/sarga.png" />
+    <file src="assets/images/blips/zold.png" />
+    <file src="assets/images/blips/kek.png" />
+    
+    
+    
+    
+    <file src="assets/images/gps/around.png" type="client" />
+    <file src="assets/images/gps/finish.png" type="client" />
+    <file src="assets/images/gps/forward.png" type="client" />
+    <file src="assets/images/gps/left.png" type="client" />
+    <file src="assets/images/gps/right.png" type="client" />
+    <file src="assets/images/gps/circlein.png" type="client" />
+    <file src="assets/images/gps/circleout.png" type="client" />
+    <file src="assets/images/gps/lostcon1.png" type="client" />
+    <file src="assets/images/gps/lostcon2.png" type="client" />
+    <file src="assets/images/gps/lostcon3.png" type="client" />
+    <file src="assets/images/gps/gpsline.png" type="client" />
+    <file src="assets/images/gps/rain.png" type="client" />
+    <file src="assets/images/gps/snow.png" type="client" />
+    <file src="assets/images/gps/overflow.png" type="client" />
+
+    
+    <export function="setGPSDestination" type="client" />
+    <export function="createStayBlip" type="client" />
+    <export function="destroyStayBlip" type="client" />
+    <export function="toggle3DBlip" type="client" />
+    
+    
+</meta>

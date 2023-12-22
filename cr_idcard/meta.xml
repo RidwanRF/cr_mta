@@ -1,0 +1,11 @@
+<meta>
+    <script src="idcardC.lua" type="client" />
+    <script src="idcardS.lua" type="server" />
+    
+    <file src="files/idcard.png" />
+    <file src="files/lunabar.ttf" />
+    
+    <export function="changeCardState" type="client" />
+    
+    <oop>true</oop>
+</meta>

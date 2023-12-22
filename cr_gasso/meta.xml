@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client"></script>
+    <file src="mods/sw_gas01.dff"></file>
+    <file src="mods/sw_gas01.txd"></file>
+    <file src="mods/sw_gas01.col"></file>
+</meta>

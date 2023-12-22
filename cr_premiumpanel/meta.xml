@@ -1,0 +1,9 @@
+<meta>
+    <script src="premiumC.luac" type="client" />
+    <script src="premiumG.lua" type="shared" />
+    
+    <file src="files/Roboto.ttf" />
+    <file src="files/Awesome.otf" />
+    
+    <oop>true</oop>
+</meta>

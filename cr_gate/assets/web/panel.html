@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<input type="text" id="owner" maxlength="32" placeholder="Tulajdonos neve, vagy idje." />
+		<div id="panel1" class="panelBody">
+			<div id="gateType" class="gateType"></div> <!-- Gate fajtája -->
+			<div id="play" class="play"></div> <!-- Gate animáció lejátszása -->
+			<div id="edit1" class="edit1"></div>  <!-- Gate pozíciók külön kezelése BF1 -->
+			<div id="edit2" class="edit2"></div><!-- Gate pozíciók külön kezelése JF1 -->
+		</div>
+		<div id="panel2" class="panelBody">
+			<div id="edit3" class="edit1"></div> <!-- Gate pozíciók külön kezelése BA2 -->
+			<div id="edit4" class="edit2"></div> <!-- Gate pozíciók külön kezelése JA2 -->
+		</div>
+	</body>
+	<script src="jquery.min.js"></script>
+	<script>
+		$("#owner").focusin(function() {
+			mta.triggerEvent("event", "p1", "p2"); // letiltás
+		});
+		
+		$("#owner").focusout(function() {
+			mta.triggerEvent("event", "p1", "p2"); // feloldás
+		});
+	
+		$("#gateType").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+		
+		$("#play").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+		
+		$("#edit1").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+		
+		$("#edit2").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+		
+		$("#edit3").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+		
+		$("#edit4").click(function() {
+			mta.triggerEvent("event", "p1", "p2");
+		});
+	</script>
+</html>

@@ -1,0 +1,17 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <oop>true</oop>
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="pedC.lua" type="client" />
+    <script src="ambulanceBedC.lua" type="client" />
+    <script src="ambulanceBedS.lua" type="server" />
+    <script src="bulletC.lua" type="client" />
+    <script src="bulletS.lua" type="server" />
+    <export function="interactAmbulanceBed" type="client" />
+    <export function="interactAmbulanceBed2" type="client" />
+    <export function="doAmbulanceBedPlacePlayer" type="client" />
+    <export function="doRespawn" type="client" />
+    <export function="syncPlayerBrokenParts" type="client" />
+    <export function="getBullets" type="client" />
+</meta>

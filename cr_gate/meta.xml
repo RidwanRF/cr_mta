@@ -1,0 +1,26 @@
+<meta>
+    <oop>true</oop>
+    <script src="g_gate.lua" type="shared" />
+    <script src="async.lua" type="shared" />
+    <script src="c_gate.lua" type="client" />
+    <script src="c_create.lua" type="client" />
+    <script src="s_gate.lua" type="server" />
+    
+    <file src="assets/images/edit_1.png" />
+    <file src="assets/images/edit_2.png" />
+    <file src="assets/images/gate.png" />
+    <file src="assets/images/lock.png" />
+    <file src="assets/images/unlock.png" />
+	
+    <file src="assets/web/jquery.min.js" />
+    <file src="assets/web/style.css" />
+    <file src="assets/web/panel.html" />
+	
+    <file src="assets/web/fence.png" />
+    <file src="assets/web/fence_1.png" />
+    <file src="assets/web/play.png" />
+    <file src="assets/web/play_1.png" />
+    <file src="assets/web/edit_1.png" />
+    <file src="assets/web/edit_1_1.png" />
+    <file src="assets/web/edit_2_1.png" />
+</meta>

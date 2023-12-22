@@ -1,0 +1,12 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="shared.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    
+    <script src="async.lua" type="server" />
+    
+    <file src="assets/image/elevator.png" />
+    
+    <oop>true</oop>
+</meta>

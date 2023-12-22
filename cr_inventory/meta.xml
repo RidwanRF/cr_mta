@@ -1,0 +1,287 @@
+<meta>
+    <oop>true</oop>
+    
+    <script src="async/global.lua" type="shared" />
+    <script src="triggerHack.lua" type="shared" />
+    <script src="importer/importer.lua" type="shared" />
+    
+    <script src="bar/client.lua" type="client" />
+    
+    <script src="global.lua" type="shared" />
+    
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    
+    <script src="useItemS.lua" type="server" />
+    <script src="useItemC.lua" type="client" />
+    
+    <script src="actionbar/client.lua" type="client" />
+    
+    <script src="itemlist/client.lua" type="client" />
+    
+    <script src="checkpoints/client.lua" type="client" />
+    <script src="checkpoints/server.lua" type="server" />
+    
+    <script src="taser/client.lua" type="client" />
+    <script src="taser/server.lua" type="server" />
+    
+    <script src="vending_machines/client.lua" type="client" />
+    
+    <script src="weapon/client.lua" type="client" />
+    
+    <script src="itemshow/itemshowC.lua" type="client" />
+    <export function="showItem" type="client" />
+    <script src="itemshow/itemshowS.lua" type="server" />
+    
+    <script src="weapon_attach/server.lua" type="server" />
+    <script src="weapon_attach/client.lua" type="client" />
+    
+    <export function="giveItem" type="shared" />
+    <export function="getItems" type="shared" />
+    <export function="updateItemDetails" type="shared" />
+    <export function="getWeight" type="shared" />
+    <export function="getMaxWeight" type="shared" />
+    <export function="getItems" type="shared" />
+    <export function="getWeaponAmmoItemID" type="shared" />
+    <export function="isWeapon" type="shared" />
+    <export function="hasItem" type="shared" />
+    <export function="isKey" type="shared" />
+    <export function="getItemName" type="shared" />
+    <export function="getItemName" type="shared" />
+    <export function="deleteItem" type="shared" />
+    <export function="convertIdToWeapon" type="shared" />
+    <export function="getFreeSlot" type="shared" />
+    <export function="convertKey" type="shared" />
+    <export function="openInventory" type="client" />
+    <export function="openBoot" type="client" />
+    <export function="getItemPNG" type="shared" />
+    <export function="getItemWeight" type="shared" />
+    <export function="putdownWeapon" type="client" />
+    <export function="openSafe" type="client" />
+    <export function="destroySafe" type="client" />
+    <export function="getAllItems" type="shared" />
+    
+    <file src="assets/images/bg.png" />
+    <file src="assets/images/icons.png" />
+    <file src="assets/images/vehicons.png" />
+    <file src="assets/images/weight.png" />
+    <file src="assets/images/left.png" />
+    <file src="assets/images/right.png" />
+    <file src="assets/images/top.png" />
+    <file src="assets/images/eye.png" />
+    <file src="assets/images/delete.png" />
+    <file src="assets/images/safeicons.png" />
+    
+    <file src="assets/sounds/hover.mp3" />
+    <file src="assets/sounds/select.mp3" />
+    <file src="assets/sounds/bincoselect.mp3" />
+    <file src="assets/sounds/key.mp3" />
+    <file src="assets/sounds/move.mp3" />
+    <file src="assets/sounds/eat.mp3" />
+    <file src="assets/sounds/drink.mp3" />
+    <file src="assets/sounds/craftSound.mp3" />
+    <file src="assets/sounds/shock.mp3" />
+    <file src="assets/sounds/noise.mp3" />
+    <file src="assets/sounds/craftSound.mp3" />
+    
+    <file src="assets/actionbar/left.png" />
+    <file src="assets/actionbar/right.png" />
+    <file src="assets/actionbar/top.png" />
+    <file src="assets/actionbar/bottom.png" />
+    
+    <file src="assets/craft/bg.png" />
+    <file src="assets/craft/button-active.png" />
+    <file src="assets/craft/button-deactive.png" />
+    <file src="assets/craft/all_deactive.png" />
+    <file src="assets/craft/1-active.png" />
+    <file src="assets/craft/2-active.png" />
+    <file src="assets/craft/3-active.png" />
+    <file src="assets/craft/4-active.png" />
+    <file src="assets/craft/5-active.png" />
+    <file src="assets/craft/6-active.png" />
+    
+    <file src="assets/items/0.png" />
+    <file src="assets/items/1.png" />
+    <file src="assets/items/2.png" />
+    <file src="assets/items/3.png" />
+    <file src="assets/items/4.png" />
+    <file src="assets/items/5.png" />
+    <file src="assets/items/6.png" />
+    <file src="assets/items/7.png" />
+    <file src="assets/items/8.png" />
+    <file src="assets/items/9.png" />
+    <file src="assets/items/10.png" />
+    <file src="assets/items/11.png" />
+    <file src="assets/items/12.png" />
+    <file src="assets/items/13.png" />
+    <file src="assets/items/14.png" />
+    <file src="assets/items/15.png" />
+    <file src="assets/items/16.png" />
+    <file src="assets/items/17.png" />
+    <file src="assets/items/18.png" />
+    <file src="assets/items/19.png" />
+    <file src="assets/items/20.png" />
+    <file src="assets/items/21.png" />
+    <file src="assets/items/22.png" />
+    <file src="assets/items/23.png" />
+    <file src="assets/items/24.png" />
+    <file src="assets/items/25.png" />
+    <file src="assets/items/26.png" />
+    <file src="assets/items/27.png" />
+    <file src="assets/items/28.png" />
+    <file src="assets/items/29.png" />
+    <file src="assets/items/30.png" />
+    <file src="assets/items/31.png" />
+    <file src="assets/items/32.png" />
+    <file src="assets/items/33.png" />
+    <file src="assets/items/34.png" />
+    <file src="assets/items/35.png" />
+    <file src="assets/items/36.png" />
+    <file src="assets/items/37.png" />
+    <file src="assets/items/38.png" />
+    <file src="assets/items/39.png" />
+    <file src="assets/items/40.png" />
+    <file src="assets/items/41.png" />
+    <file src="assets/items/41/2.png" />
+    <file src="assets/items/41/3.png" />
+    <file src="assets/items/41/4.png" />
+    <file src="assets/items/41/5.png" />
+    <file src="assets/items/42.png" />
+    <file src="assets/items/43.png" />
+    <file src="assets/items/44.png" />
+    <file src="assets/items/44/2.png" />
+    <file src="assets/items/45.png" />
+    <file src="assets/items/46.png" />
+    <file src="assets/items/47.png" />
+    <file src="assets/items/48.png" />
+    <file src="assets/items/49.png" />
+    <file src="assets/items/49/2.png" />
+    <file src="assets/items/49/3.png" />
+    <file src="assets/items/49/4.png" />
+    <file src="assets/items/49/5.png" />
+    <file src="assets/items/49/6.png" />
+    <file src="assets/items/49/7.png" />
+    <file src="assets/items/50.png" />
+    <file src="assets/items/50/2.png" />
+    <file src="assets/items/51.png" />
+    <file src="assets/items/51/2.png" />
+    <file src="assets/items/51/3.png" />
+    <file src="assets/items/51/4.png" />
+    <file src="assets/items/52.png" />
+    <file src="assets/items/53.png" />
+    <file src="assets/items/54.png" />
+    <file src="assets/items/55.png" />
+    <file src="assets/items/56.png" />
+    <file src="assets/items/56/2.png" />
+    <file src="assets/items/56/3.png" />
+    <file src="assets/items/56/4.png" />
+    <file src="assets/items/56/5.png" />
+    <file src="assets/items/57.png" />
+    <file src="assets/items/57/2.png" />
+    <file src="assets/items/57/3.png" />
+    <file src="assets/items/57/4.png" />
+    <file src="assets/items/57/5.png" />
+    <file src="assets/items/57/6.png" />
+    <file src="assets/items/57/7.png" />
+    <file src="assets/items/57/8.png" />
+    <file src="assets/items/57/9.png" />
+    <file src="assets/items/58.png" />
+    <file src="assets/items/58/2.png" />
+    <file src="assets/items/58/3.png" />
+    <file src="assets/items/58/4.png" />
+    <file src="assets/items/59.png" />
+    <file src="assets/items/59/2.png" />
+    <file src="assets/items/59/3.png" />
+    <file src="assets/items/59/4.png" />
+    <file src="assets/items/59/5.png" />
+    <file src="assets/items/60.png" />
+    <file src="assets/items/61.png" />
+    <file src="assets/items/61/2.png" />
+    <file src="assets/items/61/3.png" />
+    <file src="assets/items/62.png" />
+    <file src="assets/items/63.png" />
+    <file src="assets/items/64.png" />
+    <file src="assets/items/65.png" />
+    <file src="assets/items/66.png" />
+    <file src="assets/items/67.png" />
+    <file src="assets/items/68.png" />
+    <file src="assets/items/69.png" />
+    <file src="assets/items/70.png" />
+    <file src="assets/items/71.png" />
+    <file src="assets/items/72.png" />
+    <file src="assets/items/73.png" />
+    <file src="assets/items/74.png" />
+    <file src="assets/items/75.png" />
+    <file src="assets/items/76.png" />
+    <file src="assets/items/77.png" />
+    <file src="assets/items/78.png" />
+    <file src="assets/items/79.png" />
+    <file src="assets/items/80.png" />
+    <file src="assets/items/81.png" />
+    <file src="assets/items/82.png" />
+    <file src="assets/items/83.png" />
+    <file src="assets/items/84.png" />
+    <file src="assets/items/85.png" />
+    <file src="assets/items/86.png" />
+    <file src="assets/items/87.png" />
+    <file src="assets/items/88.png" />
+    <file src="assets/items/89.png" />
+    <file src="assets/items/90.png" />
+    <file src="assets/items/91.png" />
+    <file src="assets/items/92.png" />
+    <file src="assets/items/93.png" />
+    <file src="assets/items/94.png" />
+    <file src="assets/items/95.png" />
+    <file src="assets/items/96.png" />
+    <file src="assets/items/97.png" />
+    <file src="assets/items/99.png" />
+    <file src="assets/items/110.png" />
+    <file src="assets/items/111.png" />
+    <file src="assets/items/112.png" />
+    <file src="assets/items/113.png" />
+    <file src="assets/items/114.png" />
+    <file src="assets/items/115.png" />
+    <file src="assets/items/116.png" />
+    <file src="assets/items/117.png" />
+    <file src="assets/items/118.png" />
+    <file src="assets/items/126.png" />
+    <file src="assets/items/127.png" />
+    <file src="assets/items/129.png" />
+    
+    <file src="assets/weaponstickers/4-2.png" />
+    <file src="assets/weaponstickers/4-3.png" />
+    <file src="assets/weaponstickers/4-4.png" />
+    <file src="assets/weaponstickers/8-2.png" />
+    <file src="assets/weaponstickers/22-2.png" />
+    <file src="assets/weaponstickers/22-3.png" />
+    <file src="assets/weaponstickers/22-4.png" />
+    <file src="assets/weaponstickers/22-5.png" />
+    <file src="assets/weaponstickers/22-6.png" />
+    <file src="assets/weaponstickers/22-7.png" />
+    <file src="assets/weaponstickers/23-2.png" />
+    <file src="assets/weaponstickers/24-2.png" />
+    <file src="assets/weaponstickers/24-3.png" />
+    <file src="assets/weaponstickers/24-4.png" />
+    <file src="assets/weaponstickers/29-2.png" />
+    <file src="assets/weaponstickers/29-3.png" />
+    <file src="assets/weaponstickers/29-4.png" />
+    <file src="assets/weaponstickers/29-5.png" />
+    <file src="assets/weaponstickers/30-2.png" />
+    <file src="assets/weaponstickers/30-3.png" />
+    <file src="assets/weaponstickers/30-4.png" />
+    <file src="assets/weaponstickers/30-5.png" />
+    <file src="assets/weaponstickers/30-6.png" />
+    <file src="assets/weaponstickers/30-7.png" />
+    <file src="assets/weaponstickers/30-8.png" />
+    <file src="assets/weaponstickers/30-9.png" />
+    <file src="assets/weaponstickers/31-2.png" />
+    <file src="assets/weaponstickers/31-3.png" />
+    <file src="assets/weaponstickers/31-4.png" />
+    <file src="assets/weaponstickers/32-2.png" />
+    <file src="assets/weaponstickers/32-3.png" />
+    <file src="assets/weaponstickers/32-4.png" />
+    <file src="assets/weaponstickers/32-5.png" />
+    <file src="assets/weaponstickers/34-2.png" />
+    <file src="assets/weaponstickers/34-3.png" />
+    <file src="assets/weaponstickers/transparent.png" />
+</meta>

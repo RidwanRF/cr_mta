@@ -1,0 +1,7 @@
+<meta>
+    <script src="BlurShader.luac" type="client" />
+    <file src="shaders/BlurShader.fx" type="client" />
+    
+    <export function="createBlur" type="client" />
+    <export function="removeBlur" type="client" />
+</meta>

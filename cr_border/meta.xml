@@ -1,0 +1,8 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    
+    <file src="sound.mp3" />
+</meta>

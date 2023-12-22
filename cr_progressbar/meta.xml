@@ -1,0 +1,10 @@
+<progressbar>
+    <script src="codeC.luac" type="client" />
+    <export function="createProgressbar" type="client" />
+    <export function="deleteProgressbar" type="client" />
+    <export function="createBar" type="client" />
+    <export function="updateBar" type="client" />
+    <export function="deleteBar" type="client" />
+    
+    <oop>true</oop>
+</progressbar>

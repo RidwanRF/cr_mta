@@ -1,0 +1,7 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/fuelgun.dff" />
+    <file src="models/fuelgun.txd" />
+    
+</meta>

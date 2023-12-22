@@ -1,0 +1,6 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <export function="getConnection" type="server" />
+    <export function="requestConnection" type="server" />
+    <min_mta_version server="1.3.4-0.00000"></min_mta_version>
+</meta>

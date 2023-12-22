@@ -1,0 +1,15 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/garazs.txd" />
+    <file src="models/garazs.dff" />
+    <file src="models/garazs.col" />
+    <file src="models/tolo.dff" />
+    <file src="models/nagygarazs.txd" />
+    <file src="models/nagygarazs.dff" />
+    <file src="models/nagygarazs.col" />
+    <file src="models/tolo.dff" />
+    <file src="models/tolo.txd" />
+    <file src="models/tolo.col" />
+    
+</meta>

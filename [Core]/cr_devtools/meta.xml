@@ -1,0 +1,32 @@
+<meta>
+    <oop>true</oop>
+    
+    <script src="triggerHack.lua" type="shared" />
+    
+    <script src="global.lua" type="shared" />
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    
+    <script src="ipb/server.lua" type="server" />
+    <script src="ipb/client.lua" type="client" />
+    
+    <script src="stat/server.lua" type="server" />
+    <script src="stat/client.lua" type="client" />
+    
+    <script src="hook/server.lua" type="server" />
+    <script src="hook/client.lua" type="client" />
+    
+    <script src="coleditor/server.lua" type="server" />
+    <script src="coleditor/client.lua" type="client" />
+    
+    <script src="tex_names/client.lua" type="client" />
+    <file src="tex_names/tex_names.fx" type="client" />
+    
+    <script src="runcode/client.lua" type="client" />
+    <script src="runcode/server.lua" type="server" />
+    
+    <script src="exportlist/client.lua" type="client" />
+    <script src="exportlist/server.lua" type="server" />
+    
+    <export function="runCleanup" type="server" />
+</meta>

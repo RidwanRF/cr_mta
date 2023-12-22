@@ -1,0 +1,68 @@
+<meta>
+    <script src="async.lua" type="shared" />
+    <script src="triggerHack.lua" type="shared" />
+    
+    <script src="animate.lua" type="client" />
+    <script src="camera.lua" type="client" />
+    <script src="keypad.lua" type="client" />
+    <script src="createAccount.lua" type="client" />
+    <script src="loader.lua" type="client" />
+    
+    <script src="client_global.lua" type="client" />
+    
+    <script src="atm/sourceS.lua" type="server" />
+    <script src="atm/sourceC.lua" type="client" />
+    
+    <script src="payS.lua" type="server" />
+    <script src="payC.lua" type="client" />
+    
+    <script src="bank/personalBankAccount/sourceS.lua" type="server" />
+    <script src="bank/personalBankAccount/sourceC.lua" type="client" />
+    
+    <!-- <script src="bank/companyBankAccount/loadS.lua" type="server"/> -->
+    <!-- <script src="bank/companyBankAccount/loadC.lua" type="client"/>     -->
+    
+    <script src="bank/factionBankAccount/loadS.lua" type="server" />
+    <script src="bank/factionBankAccount/loadC.lua" type="client" />
+    
+    <!-- <script src="" type="server"/> -->
+    <!-- <script src="" type="client"/> -->
+    
+    <file src="files/songs/keypad.wav" />
+    <file src="files/songs/login.mp3" />
+    <file src="files/songs/transfer.mp3" />
+    
+    <file src="files/numpad.png" />
+    <file src="files/atm-money-out.png" />
+    <file src="files/loader.png" />
+    <file src="files/keypad-bg.png" />
+    <file src="files/keypad-textarea.png" />
+    <file src="files/keypad-login.png" />
+    <file src="files/keypad-login-active.png" />
+    <file src="files/keypad-exit.png" />
+    <file src="files/keypad-exit-active.png" />
+    <file src="files/keypad-button.png" />
+    <file src="files/keypad-button-hover.png" />
+    
+    <file src="files/create_account_bg.png" />
+    <file src="files/create_account_btn_create.png" />
+    <file src="files/create_account_btn_create_hover.png" />
+    <file src="files/create_account_btn_exit.png" />
+    <file src="files/create_account_btn_exit_hover.png" />
+    
+    <file src="files/list-menu.png" />
+    <file src="files/money-reference.png" />
+    <file src="files/money-in.png" />
+    <file src="files/money-out.png" />
+    <file src="files/settings-gears.png" />
+    <file src="files/close-browser.png" />
+    <file src="files/delete.png" />
+    <file src="files/message.png" />
+    
+    <export function="openATM" type="client" />
+    <export function="getPlayerBankMoney" type="shared" />
+    <export function="setBankMoney" type="shared" />
+    <export function="createLog" type="shared" />
+    
+    <oop>true</oop>
+</meta>

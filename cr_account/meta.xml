@@ -1,0 +1,105 @@
+<meta>
+    <oop>true</oop>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="async/global.lua" type="shared" />
+    
+    <script src="global.lua" type="shared" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="account-save.lua" type="server" />
+    
+    <script src="ban/client.lua" type="client" />
+    <script src="ban/server.lua" type="server" />
+    
+    <script src="bar/client.lua" type="client" />
+    
+    <script src="sound/client.lua" type="client" />
+    
+    <script src="logo/client.lua" type="client" />
+    
+    <script src="loading/client.lua" type="client" />
+    
+    <script src="rptest/client.lua" type="client" />
+    <script src="rptest/global.lua" type="shared" />
+    
+    <script src="situations/client.lua" type="client" />
+    <script src="situations/global.lua" type="shared" />
+    
+    <script src="login/client.lua" type="client" />
+    <script src="login/server.lua" type="server" />
+    
+    <script src="register/client.lua" type="client" />
+    <script src="register/server.lua" type="server" />
+    
+    <script src="tour/client.lua" type="client" />
+    
+    <script src="char-reg/client.lua" type="client" />
+    <script src="char-reg/video.lua" type="client" />
+    <script src="char-reg/server.lua" type="server" />
+    
+    <file src="files/ban-bg.png" />
+    
+    <file src="files/login-bg.png" />
+    <file src="files/login-bg-boxes-all-gray.png" />
+    <file src="files/login-bg-boxes-user-active.png" />
+    <file src="files/login-bg-boxes-pw-active.png" />
+    <file src="files/login-buttons-all-gray.png" />
+    <file src="files/login-buttons-log-active.png" />
+    <file src="files/login-buttons-reg-active.png" />
+    <file src="files/login-bg-passwordSave-deactive.png" />
+    <file src="files/login-bg-passwordSave-active.png" />
+    
+    <file src="files/reg-bg.png" />
+    <file src="files/reg-bg-boxes-all-gray.png" />
+    <file src="files/reg-bg-boxes-user-active.png" />
+    <file src="files/reg-bg-boxes-pw-active.png" />
+    <file src="files/reg-bg-boxes-pw2-active.png" />
+    <file src="files/reg-bg-boxes-email-active.png" />
+    <file src="files/reg-buttons-all-gray.png" />
+    <file src="files/reg-buttons-log-active.png" />
+    <file src="files/reg-buttons-reg-active.png" />
+    
+    <file src="files/rptest-bg.png" />
+    <file src="files/rptest-bg-box-1-active.png" />
+    <file src="files/rptest-bg-box-1-deactive.png" />
+    <file src="files/rptest-bg-box-1-selected.png" />
+    <file src="files/rptest-bg-box-2-active.png" />
+    <file src="files/rptest-bg-box-2-deactive.png" />
+    <file src="files/rptest-bg-box-2-selected.png" />
+    <file src="files/rptest-bg-box-3-active.png" />
+    <file src="files/rptest-bg-box-3-deactive.png" />
+    <file src="files/rptest-bg-box-3-selected.png" />
+    <file src="files/rptest-bg-box-4-active.png" />
+    <file src="files/rptest-bg-box-4-deactive.png" />
+    <file src="files/rptest-bg-box-4-selected.png" />
+    
+    <file src="files/logo.png" />
+    <file src="files/logo-text.png" />
+    
+    <file src="files/sound-wallpaper.png" />
+    <file src="files/sound-pointer.png" />
+    
+    <file src="files/bong.mp3" />
+    <file src="files/key.mp3" />
+    <file src="files/bubble.mp3" />
+    <file src="files/login-sound.mp3" />
+    <file src="files/our-town.mp3" />
+    <file src="files/loading.mp3" />
+    <file src="files/bansound.mp3" />
+    
+    <file src="files/beep.mp3" />
+    <file src="files/left.png" />
+    <file src="files/right.png" />
+    
+    <export function="createLogoAnimation" type="client" />
+    <export function="stopLogoAnimation" type="client" />
+    <export function="updateLogoPos" type="client" />
+    <export function="getCharacterNameByID" type="server" />
+    <export function="updateRemovedGroup" type="server" />
+    <export function="getCharacterCount" type="server" />
+    <export function="getPlayerDatasByName" type="server" />
+    <export function="updatePlayerJailDatas" type="server" />
+    <export function="updatePlayerPositionDatas" type="server" />
+    
+    <min_mta_version client="1.5.5" server="1.5.5" />
+</meta>

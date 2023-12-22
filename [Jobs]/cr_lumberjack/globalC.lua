@@ -1,0 +1,269 @@
+sx, sy = guiGetScreenSize();
+panelData = {
+    ["start"] = {
+		["startTime"] = 0,
+		["endTime"] = 0,
+		["hide"] = false,
+		["show"] = false,	
+	},
+	["stop"] = {
+		["startTime"] = 0,
+		["endTime"] = 0,
+		["hide"] = false,
+		["show"] = false,
+	},
+};
+startMarker = nil;
+startTime = 0;
+
+tutorialTexts = {
+	[1] = "#FFFFFFMenj a fák felé, majd vedd elő a baltádat, és kezd el kivágni a kiválasztott fát! #FF9933(Üsd a fát a baltával!)#FFFFFF A fa kivágás után ki fog dőlni. Majd utána fel kell aprítanod!",
+	[2] = "#FFFFFFMikor beleütsz a fába láthatod, hogy megjelenik egy #FF9933folyamatjelző csík#FFFFFF, mely ha #FF9933100%#FFFFFF -ra ér a fa kidől, azaz kivágtad a fát.",
+	[3] = "#FFFFFFMost kattints a fára, és teljesítsd a #FF9933minigame#FFFFFF-et, majd miután felaprítottad, az #FF9933'E'#FFFFFF billentyű lenyomásával a rakás előtt, vedd fel az aprított fát és pakold fel a munkajárművedre az #FF9933'E'#FFFFFF billentyű lenyomásával a kocsi hátuljánál!",
+	[4] = "#FFFFFFMost menj a #00FF00zöld#FFFFFF bliphez #FF9933(Térkép ikonhoz)#FFFFFF és szállítsd le a felpakolt fát.",
+	[5] = "#FFFFFFA fát, munkajárműved hátuljánál tudod az #FF9933'E'#FFFFFF billentyű lenyomásával leszedni. Majd vidd azt a sárga markerbe, és az #FF9933'E'#FFFFFF billentyű lenyomásával add le!",
+};
+tutorialState = 0;
+tutorialTitle = "#FF9933Feladat - Favágó";
+
+function nextTutorial()
+	tutorialState = tutorialState+1
+	exports.cr_tutorial:showPanel(tutorialTitle, tutorialTexts[tutorialState])
+	setElementJobData(localPlayer, "tutorialState", tutorialState)
+end
+
+function isCursorHover(startX, startY, sizeX, sizeY)
+    if(isCursorShowing()) then
+        local cursorPosition = {getCursorPosition()}
+        cursorPosition.x, cursorPosition.y = cursorPosition[1] * sx, cursorPosition[2] * sy
+
+        if(cursorPosition.x >= startX and cursorPosition.x <= startX + sizeX and cursorPosition.y >= startY and cursorPosition.y <= startY + sizeY) then
+            return true
+        else
+            return false
+        end
+    else
+        return false
+    end
+end
+
+function showPanel(panel, state)
+	if(panel == 1) then
+		if(state) then
+			panelData["start"]["startTime"] = getTickCount()
+			panelData["start"]["endTime"] = getTickCount() + 500
+			panelData["start"]["hide"] = false
+			panelData["start"]["show"] = true
+		else
+			panelData["start"]["startTime"] = getTickCount()
+			panelData["start"]["endTime"] = getTickCount() + 500
+			panelData["start"]["hide"] = true
+			setTimer(function() 
+				panelData["start"]["show"] = false
+			end, 500, 1)
+		end
+	elseif(panel == 2) then
+		if(state) then
+			panelData["stop"]["startTime"] = getTickCount()
+			panelData["stop"]["endTime"] = getTickCount() + 500
+			panelData["stop"]["hide"] = false
+			panelData["stop"]["show"] = true
+		else
+			panelData["stop"]["startTime"] = getTickCount()
+			panelData["stop"]["endTime"] = getTickCount() + 500
+			panelData["stop"]["hide"] = true
+			setTimer(function() 
+				panelData["stop"]["show"] = false
+			end, 500, 1)
+		end
+	end
+end
+
+function deleteJobMarkers()
+	for i, v in pairs(getElementsByType("marker")) do
+		if(getElementJobData(v, "starter") == localPlayer:getData("acc >> id")) then
+			v:destroy()
+		end
+	end
+end
+
+function getNearestVehicle(player, distance)
+	local tempTable = {}
+	local lastMinDis = distance-0.0001
+	local nearestVeh = false
+	local px, py, pz = getElementPosition(player)
+	local pint = getElementInterior(player)
+	local pdim = getElementDimension(player)
+	for _,v in pairs(getElementsByType("vehicle")) do
+		local vint,vdim = getElementInterior(v), getElementDimension(v)
+		if(vint == pint and vdim == pdim) then
+			local vx, vy, vz = getElementPosition(v)
+			local dis = getDistanceBetweenPoints3D(px,py,pz,vx,vy,vz)
+			if(dis < distance)then
+				if(dis < lastMinDis) then 
+					lastMinDis = dis
+					nearestVeh = v
+				end
+			end
+		end
+	end
+	return nearestVeh
+end
+
+function getNearestPile(player, distance)
+	local tempTable = {}
+	local lastMinDis = distance-0.0001
+	local nearestVeh = false
+	local px, py, pz = getElementPosition(player)
+	local pint = getElementInterior(player)
+	local pdim = getElementDimension(player)
+	for _,v in pairs(getElementsByType("object")) do
+		if(getElementJobData(v, "treePile")) then
+			local vint,vdim = getElementInterior(v), getElementDimension(v)
+			if(vint == pint and vdim == pdim) then
+				local vx, vy, vz = getElementPosition(v)
+				local dis = getDistanceBetweenPoints3D(px,py,pz,vx,vy,vz)
+				if(dis < distance)then
+					if(dis < lastMinDis) then 
+						lastMinDis = dis
+						nearestVeh = v
+					end
+				end
+			end
+		end
+	end
+	return nearestVeh
+end
+
+_dxDrawRectangle = dxDrawRectangle;
+dxDrawRectangle = function(left, top, width, height, color, postgui)
+	if not postgui then
+		postgui = false;
+	end
+
+	left, top = left + 2, top + 2;
+	width, height = width - 4, height - 4;
+
+	_dxDrawRectangle(left - 2, top, 2, height, color, postgui);
+	_dxDrawRectangle(left + width, top, 2, height, color, postgui);
+	_dxDrawRectangle(left, top - 2, width, 2, color, postgui);
+	_dxDrawRectangle(left, top + height, width, 2, color, postgui);
+
+	_dxDrawRectangle(left - 1, top - 1, 1, 1, color, postgui);
+	_dxDrawRectangle(left + width, top - 1, 1, 1, color, postgui);
+	_dxDrawRectangle(left - 1, top + height, 1, 1, color, postgui);
+	_dxDrawRectangle(left + width, top + height, 1, 1, color, postgui);
+
+	_dxDrawRectangle(left, top, width, height, color, postgui);
+end
+
+setTimer(function()
+	local animBlock = localPlayer:getData("forceAnimation") or {"", ""}
+	if(animBlock[1] == "LumberjackJob->Carry" or animBlock[2] == "LumberjackJob->Carry")then
+		local block, anim = getPedAnimation(localPlayer)
+		if(block ~= "CARRY" or anim ~= "crry_prtial") then
+			triggerServerEvent("carry->anim", localPlayer, localPlayer)
+		end
+	end
+end, 500, 0)
+
+
+addEventHandler("onClientResourceStart", resourceRoot, function() 
+	if(getElementJobData(localPlayer, "tutorial")) then
+		tutorialState = tonumber(getElementJobData(localPlayer, "tutorialState"))
+		tutorialState = tutorialState-1
+		nextTutorial()
+	end
+end)
+
+local material = dxCreateTexture("images/suitcase.png")
+
+function dxDrawOctagon3D(x, y, z, radius, width, color)
+	if type(x) ~= "number" or type(y) ~= "number" or type(z) ~= "number" then
+		return false
+	end
+
+	local radius = radius or 1
+	local radius2 = radius/math.sqrt(2)
+	local width = width or 1
+	local color = color or tocolor(255,255,255,150)
+
+	point = {}
+
+		for i=1,8 do
+			point[i] = {}
+		end
+
+		point[1].x = x
+		point[1].y = y-radius
+		point[2].x = x+radius2
+		point[2].y = y-radius2
+		point[3].x = x+radius
+		point[3].y = y
+		point[4].x = x+radius2
+		point[4].y = y+radius2
+		point[5].x = x
+		point[5].y = y+radius
+		point[6].x = x-radius2
+		point[6].y = y+radius2
+		point[7].x = x-radius
+		point[7].y = y
+		point[8].x = x-radius2
+		point[8].y = y-radius2
+		
+	for i=1,8 do
+		if i ~= 8 then
+			x, y, z, x2, y2, z2 = point[i].x,point[i].y,z,point[i+1].x,point[i+1].y,z
+		else
+			x, y, z, x2, y2, z2 = point[i].x,point[i].y,z,point[1].x,point[1].y,z
+		end
+		dxDrawLine3D(x, y, z, x2, y2, z2, color, width)
+	end
+	return true
+end
+
+function drawnOctagon()
+	if(isElement(startMarker)) then
+		local x,y,z = getElementPosition(startMarker)
+		cx, cy, cz = x,y,z + 3
+		----outputChatBox("asd")
+		----outputChatBox(x)
+		z = z + 0.03
+		local now = getTickCount()
+		local multipler, alpha = interpolateBetween(-0.5, 0, 0, 0.1, 255, 0, now / 2500, "CosineCurve")
+		dxDrawOctagon3D(x,y,z, 1, 3, tocolor(255, 153, 51,alpha))
+		z = z + multipler
+		dxDrawImage3D(x, y, z+2, 1, 1, material, tocolor(255, 153, 51,alpha))
+	end
+end
+
+setTimer(function()
+	if isElement(startMarker) and isElementStreamedIn(startMarker) then
+		if getDistanceBetweenPoints3D(localPlayer.position, startMarker.position) <= 60 and localPlayer.dimension == startMarker.dimension and localPlayer.interior == startMarker.interior then
+			if not state then
+				state = true
+				addEventHandler("onClientRender", root, drawnOctagon, true, "low-5")
+
+			end
+		else
+			if state then
+				state = false
+				removeEventHandler("onClientRender", root, drawnOctagon)
+			end    
+		end
+	else
+		removeEventHandler("onClientRender", root, drawnOctagon)
+	end
+end, 300, 0)
+-- #optimizált
+
+--3dLine
+function drawnLines()
+    dxDrawLine3D(start[1], start[2], start[3], craneObj.position, tocolor(0,0,0,255), 10)
+    ----outputChatBox("asd")
+end
+
+
+function dxDrawImage3D( x, y, z, width, height, material, color, rotation, ... )
+    return dxDrawMaterialLine3D( x, y, z, x, y, z - width, material, height, color or 0xFFFFFFFF, ... )
+end

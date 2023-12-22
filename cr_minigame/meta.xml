@@ -1,0 +1,13 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="files/2/arrow.png" />
+    <file src="files/3/belsokor.png" />
+    <file src="files/3/kulsokor.png" />
+    <file src="files/4/arrow.png" />
+    <file src="files/4/saw.png" />
+    <file src="files/4/wood.png" />
+    <export function="createMinigame" type="client" />
+    <export function="stopMinigame" type="client" />
+</meta>

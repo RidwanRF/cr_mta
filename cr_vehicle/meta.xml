@@ -1,0 +1,38 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="vehicleC.lua" type="client" />
+    <script src="vehicle_commands.lua" type="client" />
+    <script src="vehicleG.lua" type="shared" />
+    <script src="vehicleS.lua" type="server" />
+    
+    <script src="async.lua" type="server" />
+    
+    <file src="files/plate.png" />
+    <file src="files/logo.png" />
+    <file src="files/texture.fx" />
+    <file src="files/sounds/beltin.mp3" />
+    <file src="files/sounds/beltout.mp3" />
+    <file src="files/sounds/belt.mp3" />
+    <file src="files/sounds/window.mp3" />
+    <file src="files/fonts/roboto.black.ttf" />
+    <file src="files/sounds/light.mp3" />
+    <file src="files/sounds/engine.mp3" />
+    <file src="files/sounds/engineoff.mp3" />
+    <file src="files/sounds/lock.mp3" />
+    <file src="files/sounds/lockin.mp3" />
+    
+    <export function="getVehicleName" type="shared" />
+    <export function="isWindowableVeh" type="shared" />
+    <export function="getPlayerVehicles" type="shared" />
+    <export function="getVehicleMaxFuel" type="shared" />
+    <export function="getMaxFuel" type="shared" />
+    <export function="getTime" type="shared" />
+    <export function="generatePlateText" type="server" />
+    <export function="deleteVehicle" type="server" />
+    <!-- <export function="createTemporaryVehicle" type="server" /> -->
+    <export function="getTable" type="server" />
+    <export function="makeVehicle" type="server" />
+    <export function="setVehicleOwner" type="server" />
+    
+    <oop>true</oop>
+</meta>

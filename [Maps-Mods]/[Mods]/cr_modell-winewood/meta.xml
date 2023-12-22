@@ -1,0 +1,8 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/texture.txd" />
+    
+    <file src="models/winewood.dff" />
+    <file src="models/winewood.col" />
+</meta>

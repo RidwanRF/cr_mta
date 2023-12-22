@@ -1,0 +1,5 @@
+<meta>
+    <oop>true</oop>
+    <script src="client.luac" type="client" />
+    <file src="files/welcomesound.mp3" />
+</meta>

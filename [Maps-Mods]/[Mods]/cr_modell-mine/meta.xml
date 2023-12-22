@@ -1,0 +1,12 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/des_stownw.txd" />
+    <file src="models/cs_mountain.txd" />
+    
+    <file src="models/bridge.dff" />
+    <file src="models/bridge.col" />
+    <file src="models/mine.dff" />
+    <file src="models/mine.col" />
+    <oop>true</oop>
+</meta>

@@ -1,0 +1,21 @@
+<meta>
+    <script src="hudC.lua" type="client" />
+    
+    <file src="gtaFont.ttf" />
+    
+    <file src="html/index.html" />
+    
+    <file src="html/assets/css/style.css" />
+    
+    <file src="html/assets/images/hp.png" />
+    <file src="html/assets/images/armor.png" />
+    <file src="html/assets/images/hunger.png" />
+    <file src="html/assets/images/thirsty.png" />
+    <file src="html/assets/images/stamina.png" />
+    
+    <file src="html/assets/js/jquery.min.js" />
+    <file src="html/assets/js/jquery.hexagonprogress.min.js" />
+    <file src="html/assets/js/main.js" />
+    
+    <oop>true</oop>
+</meta>

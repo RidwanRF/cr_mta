@@ -1,0 +1,19 @@
+<bank_script>
+    <script src="heist/heistG.lua" type="shared" />
+    <script src="heist/heistS.lua" type="server" />
+    <script src="heist/heistC.luac" type="client" />
+    
+    <script src="drone/global.lua" type="shared" />
+    <script src="drone/codeS.lua" type="server" />
+    <script src="drone/codeC.luac" type="client" />
+    
+    <export function="createDrone" type="client" />
+    
+    <file src="drone/files/rec.png" />
+    <file src="files/alarm.mp3" />
+    <file src="files/driller.mp3" />
+    <file src="files/laptop1.png" />
+    <file src="files/laptop2.png" />
+    
+    <oop>true</oop>
+</bank_script>

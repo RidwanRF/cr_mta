@@ -1,0 +1,8 @@
+<meta>
+    <script src="client.lua" type="client" />
+    
+    <export function="showPanel" type="client" />
+    <export function="hidePanel" type="client" />
+    
+    <oop>true</oop>
+</meta>

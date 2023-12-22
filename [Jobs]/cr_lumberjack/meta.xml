@@ -1,0 +1,35 @@
+<lumberjack>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="start/startS.lua" type="server" />
+    <script src="start/startC.lua" type="client" />
+    
+    <script src="interaction/interactionS.lua" type="server" />
+    <script src="interaction/interactionC.lua" type="client" />
+    
+    <script src="globalS.lua" type="server" />
+    <script src="globalC.lua" type="client" />
+    <script src="shared.lua" type="shared" />
+    <script src="async.lua" type="shared" />
+    
+    <script src="keyHandlers.lua" type="client" />
+    
+    <script src="loader.lua" type="server" />
+    
+    <export function="destroyPileInHand" type="server" />
+    
+    <file src="images/arrow.png" />
+    <file src="images/wood.png" />
+    <file src="images/saw.png" />
+    <file src="fallingTree.mp3" />
+    <file src="woodSawing.mp3" />
+    <file src="minigameFinish.mp3" />
+    <file src="chopping.mp3" />
+    <file src="endChopping.mp3" />
+    
+    <file src="images/fa.png" />
+    
+    <file src="images/logo.png" />
+    <file src="images/suitcase.png" />
+    
+    <oop>true</oop>
+</lumberjack>

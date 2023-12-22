@@ -1,0 +1,5 @@
+<meta>
+    <script src="global.lua" type="client" />
+    <script src="global.lua" type="server" />
+    <export function="getTriggerName" type="shared" />
+</meta>

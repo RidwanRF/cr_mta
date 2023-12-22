@@ -1,0 +1,7 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="files/snipercrosshair.png" />
+    <file src="files/crosshair.png" />
+    <file src="files/crosshair2.png" />
+    <file src="shaders/shader.fx" />
+</meta>

@@ -1,0 +1,15 @@
+<map edf:definitions="editor_main">
+    <object id="object (dockcranescale0) (1)" breakable="true" interior="0" alpha="255" model="5126" doublesided="false" scale="1" dimension="0" posX="2186" posY="-1983" posZ="25.9" rotX="0" rotY="0" rotZ="91.25"></object>
+    <object id="object (fenceshit) (1)" breakable="true" interior="0" alpha="255" model="982" doublesided="false" scale="1" dimension="0" posX="2154.7" posY="-1980.8" posZ="13.2" rotX="0" rotY="0" rotZ="0.75"></object>
+    <object id="object (fenceshit2) (1)" breakable="true" interior="0" alpha="255" model="984" doublesided="false" scale="1" dimension="0" posX="2161.1001" posY="-1968" posZ="13.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (bar_gatebar01) (1)" breakable="true" interior="0" alpha="255" model="966" doublesided="false" scale="1" dimension="0" posX="2203.3999" posY="-1981.8" posZ="12.5" rotX="0" rotY="0" rotZ="269.75"></object>
+    <object id="object (paypark_lan02) (1)" breakable="true" interior="0" alpha="255" model="4639" doublesided="false" scale="1" dimension="0" posX="2202" posY="-1973.4" posZ="14.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (dckwrkhut) (1)" breakable="true" interior="0" alpha="255" model="3626" doublesided="false" scale="1" dimension="0" posX="2195.1001" posY="-1971.9" posZ="14.1" rotX="0" rotY="0" rotZ="0"></object>
+    <removeWorldObject id="removeWorldObject (dckwrkhut) (1)" radius="8.8088837" interior="0" model="3626" lodModel="3770" posX="2197.9766" posY="-1970.5625" posZ="14" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (strtbarrier01) (1)" breakable="true" interior="0" alpha="255" model="1237" doublesided="false" scale="1" dimension="0" posX="2153.8" posY="-1968.4" posZ="12.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (roadworkbarrier1) (1)" breakable="true" interior="0" alpha="255" model="1228" doublesided="false" scale="1" dimension="0" posX="2153.3" posY="-1985.6" posZ="13" rotX="0" rotY="0" rotZ="338.75"></object>
+    <object id="object (strtbarrier01) (2)" breakable="true" interior="0" alpha="255" model="1237" doublesided="false" scale="1" dimension="0" posX="2154.7" posY="-1993.6" posZ="12.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (laxrf_scrapbox) (1)" breakable="true" interior="0" alpha="255" model="3722" doublesided="false" scale="1" dimension="0" posX="2190.7" posY="-1964.5" posZ="17" rotX="0" rotY="0" rotZ="270.496"></object>
+    <removeWorldObject id="removeWorldObject (lamppost3) (1)" radius="6.6149273" interior="0" model="1226" lodModel="0" posX="2208.6294" posY="-1977.6766" posZ="13.33893" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (strtbarrier01) (3)" breakable="true" interior="0" alpha="255" model="1237" doublesided="false" scale="1" dimension="0" posX="2167.3999" posY="-1968.5" posZ="12.6" rotX="0" rotY="0" rotZ="0"></object>
+</map>

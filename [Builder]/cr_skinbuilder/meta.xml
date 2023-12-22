@@ -1,0 +1,8 @@
+<meta>
+	<script src="builder.lua" type="server"/>
+	<script src="global.lua" type="shared"/>
+	<script type="server" src="lib/underscore.lua"/>
+	<script type="server" src="lib/utils.lua"/>
+
+	<oop>true</oop>
+</meta>

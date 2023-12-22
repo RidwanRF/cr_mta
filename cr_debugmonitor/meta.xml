@@ -1,0 +1,6 @@
+<meta>
+    <script src="debugC.luac" type="client" />
+    <script src="debugS.lua" type="server" />
+    
+    <file src="Roboto.ttf" />
+</meta>

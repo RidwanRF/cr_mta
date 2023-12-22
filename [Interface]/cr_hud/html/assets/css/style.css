@@ -1,0 +1,19 @@
+body {
+    /* background: #7cc576; */
+}
+
+.hexagon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.hexagon img {
+    float: left;
+    display: block;
+    width: 32px;
+    height: auto;
+    transform: translate(19px, -56px);
+    top: 10px;
+}

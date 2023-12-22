@@ -1,0 +1,8 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="files/handbrake.wav" />
+    <file src="files/handbrakeoff.wav" />
+    <file src="files/handBrakeBG.png" />
+    <file src="files/handBrakePointer.png" />
+</meta>

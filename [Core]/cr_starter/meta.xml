@@ -1,0 +1,4 @@
+﻿<meta>
+    <!-- Scripts -->
+    <script src="server.lua" type="server" />
+</meta>

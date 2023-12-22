@@ -1,0 +1,27 @@
+<meta>
+    <script src="triggerHack.lua" type="shared" />
+    <script src="shared.lua" type="shared" />
+    
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    
+    <!-- <script src="elevatorS.lua" type="server" /> -->
+    <!-- <script src="elevatorC.lua" type="client" /> -->
+    
+    <script src="async.lua" type="server" />
+    
+    <file src="assets/image/image.png" />
+    <file src="assets/image/exit.png" />
+    <file src="assets/image/ring.png" />
+    <file src="assets/image/knock.png" />
+    
+    <file src="assets/sound/locktype1.mp3" />
+    <file src="assets/sound/locktype3.mp3" />
+    
+    <file src="assets/sound/locktype2.wav" />
+    <file src="assets/sound/locktype4.wav" />
+    <file src="assets/sound/knock.wav" />
+    <file src="assets/sound/ring.wav" />
+    
+    <oop>true</oop>
+</meta>

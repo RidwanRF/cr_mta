@@ -1,0 +1,13 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/rodeo01_law2.txd" />
+    <file src="models/club_interior.txd" />
+    
+    <file src="models/club.dff" />
+    <file src="models/club.col" />
+    <file src="models/club_interior.dff" />
+    <file src="models/club_interior.col" />
+    
+    <oop>true</oop>
+</meta>

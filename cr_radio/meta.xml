@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <file src="files/icons.png" />
+    <file src="files/icons2.png" />
+    <file src="files/logo.png" />
+    <file src="files/staymta.png" />
+    <file src="files/gomb.mp3" />
+    <export function="getChannels" type="client" />
+</meta>

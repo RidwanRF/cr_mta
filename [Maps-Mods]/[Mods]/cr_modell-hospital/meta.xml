@@ -1,0 +1,10 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/texture.txd" />
+    
+    <file src="models/hospital.dff" />
+    <file src="models/hospital.col" />
+    
+    <file src="models/roadFix.col" />
+</meta>

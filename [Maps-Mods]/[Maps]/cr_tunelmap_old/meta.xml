@@ -1,0 +1,5 @@
+<meta>
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client"></script>
+    <map src="map.map"></map>
+</meta>

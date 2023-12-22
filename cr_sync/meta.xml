@@ -1,0 +1,8 @@
+<meta>
+    <script src="syncC.lua" type="client" />
+    <script src="syncS.lua" type="server" />
+    
+	<export function="getTemperature" type="server" />
+	
+    <oop>true</oop>
+</meta>

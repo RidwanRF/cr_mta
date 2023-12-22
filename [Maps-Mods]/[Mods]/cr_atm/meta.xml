@@ -1,0 +1,11 @@
+<meta>
+    <script src="object.luac" type="client" />
+    
+    <file src="models/ATM.txd" />
+    <file src="models/ATM.dff" />
+    <file src="models/ATM.col" />
+    <file src="models/ATM2.txd" />
+    <file src="models/ATM2.dff" />
+    <file src="models/ATM2.col" />
+    
+</meta>
